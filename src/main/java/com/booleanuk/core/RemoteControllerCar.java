@@ -20,7 +20,19 @@ public class RemoteControllerCar {
     public void move(String direction) {
         direction = direction.toLowerCase();
         switch (direction) {
-            case "forward", "backward", "left", "right": {
+            case "forward": {
+                this.direction = direction;
+                break;
+            }
+            case "backward": {
+                this.direction = direction;
+                break;
+            }
+            case "left": {
+                this.direction = direction;
+                break;
+            }
+            case "right": {
                 this.direction = direction;
                 break;
             }
@@ -32,7 +44,11 @@ public class RemoteControllerCar {
     public boolean replaceBattery(String batteryType) {
         batteryType = batteryType.toLowerCase();
         switch (batteryType) {
-            case "disposable", "rechargeable": {
+            case "rechargeable": {
+                this.batteryType = batteryType;
+                return true;
+            }
+            case "disposable": {
                 this.batteryType = batteryType;
                 return true;
             }
@@ -66,7 +82,11 @@ public class RemoteControllerCar {
     public void setRemoteType(String remoteType) {
         remoteType = remoteType.toLowerCase();
         switch (remoteType) {
-            case "simple", "advanced":  {
+            case "advanced":  {
+                this.remoteType = remoteType;
+                break;
+            }
+            case "simple": {
                 this.remoteType = remoteType;
                 break;
             }
