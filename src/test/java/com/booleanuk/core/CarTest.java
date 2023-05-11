@@ -7,13 +7,15 @@ public class CarTest {
 
     @Test
     public void testReplaceBattery() {
-        Car car = new Car("red", true, 70);
+        Car car1 = new Car("red", true, 5);
+        Car car2 = new Car("blue", false, 70);
+
 
         //Successful test
-        Assertions.assertTrue(car.replaceBattery());
+        Assertions.assertTrue(car1.replaceBattery());
 
         //Failure test
-        Assertions.assertFalse(car.replaceBattery());
+        Assertions.assertFalse(car2.replaceBattery());
     }
 
 }
