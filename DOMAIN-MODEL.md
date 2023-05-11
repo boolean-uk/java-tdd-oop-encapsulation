@@ -37,3 +37,7 @@ I have a remote controlled car:
 |                          |                                               | User Story 5,7 (Direction value is invalid)                          | Informs the user, that the given direction is invalid          |
 |                          | `replaceBattery(String batteryType): boolean` | User Story 8 (batteryType is valid)                                  | Returns true, sets the batteryType to the given input          |
 |                          |                                               | User Story 8 (batteryType is invalid)                                | Returns false, informs the user that the input is invalid      |
+
+## UML Diagram
+
+![](./assets/uml_diagram.jpg)
