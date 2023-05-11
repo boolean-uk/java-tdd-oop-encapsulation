@@ -11,9 +11,9 @@ public class CarMovementTest {
         CarMovement carMovement = new CarMovement(car1);
 
         //Successful test
-        Assertions.assertTrue(carMovement.moveForward());
+        Assertions.assertTrue(carMovement.moveForward(10));
 
         //Failure test
-        Assertions.assertFalse(carMovement.moveForward());
+        Assertions.assertFalse(carMovement.moveForward(600));
     }
 }
