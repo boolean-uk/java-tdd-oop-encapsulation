@@ -18,6 +18,7 @@ public class RemoteControllerCar {
     }
 
     public void move(String direction) {
+        direction = direction.toLowerCase();
         switch (direction) {
             case "forward", "backward", "left", "right": {
                 this.direction = direction;
@@ -29,6 +30,7 @@ public class RemoteControllerCar {
     }
 
     public boolean replaceBattery(String batteryType) {
+        batteryType = batteryType.toLowerCase();
         switch (batteryType) {
             case "disposable", "rechargeable": {
                 this.batteryType = batteryType;
@@ -54,7 +56,7 @@ public class RemoteControllerCar {
     }
 
     public void setBatteryType(String batteryType) {
-        this.batteryType = batteryType;
+        replaceBattery(batteryType);
     }
 
     public String getRemoteType() {
@@ -62,15 +64,21 @@ public class RemoteControllerCar {
     }
 
     public void setRemoteType(String remoteType) {
-        this.remoteType = remoteType;
+        remoteType = remoteType.toLowerCase();
+        switch (remoteType) {
+            case "simple", "advanced":  {
+                this.remoteType = remoteType;
+                break;
+            }
+            default: {
+                System.out.println("Remote type is invalid");
+                break;
+            }
+        }
     }
 
     public String getDirection() {
         return direction;
-    }
-
-    public void setDirection(String direction) {
-        this.direction = direction;
     }
 
     public boolean isMoving() {
@@ -86,6 +94,10 @@ public class RemoteControllerCar {
     }
 
     public void setBatteryPercentage(int batteryPercentage) {
-        this.batteryPercentage = batteryPercentage;
+        if (batteryPercentage < 0 || batteryPercentage > 100) {
+            System.out.println("Battery Percentage not valid");
+        } else {
+            this.batteryPercentage = batteryPercentage;
+        }
     }
 }
