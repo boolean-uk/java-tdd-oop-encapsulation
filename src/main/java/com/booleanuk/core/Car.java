@@ -82,6 +82,7 @@ public class Car {
                     }else{
                         System.out.println("Car is moving " + direction + " for " + distance + " meters.");
                         setBatteryRemaining(getBatteryRemaining()-batteryCost);
+                        setIsMoving(true);
                         return true;
                     }
                 }
@@ -90,18 +91,35 @@ public class Car {
     }
 
     public boolean stop() {
-        return true;
+        if(getIsMoving()){
+            setIsMoving(false);
+            return true;
+        }else{
+            return false;
+        }
     }
 
-    public boolean turn(String left) {
-        return true;
+    public boolean turn(String direction) {
+        if (getIsMoving()){
+            System.out.println("Turning: "+direction);
+            return true;
+        }
+        System.out.println("Car is not moving, can not turn");
+        return false;
     }
 
-    public void replaceBattery(String disposable) {
-        
-        return;
+    public void replaceBattery(String batteryType) {
+        if(batteryType.equals("rechargeable") || batteryType.equals("disposable")){
+            setBatteryType(batteryType);
+            setBatteryRemaining(60);
+        }
     }
 
-    public void switchRemoteControlType(String advanced) {
+    public void switchRemoteControlType() {
+        if(getRemoteControlType().equals("simple")){
+            setRemoteControlType("advanced");
+        }else{
+            setRemoteControlType("simple");
+        }
     }
 }

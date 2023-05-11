@@ -28,8 +28,6 @@ public class CarTest {
         Assertions.assertTrue(car.stop());
         car.setIsMoving(false);
         Assertions.assertFalse(car.stop());
-
-
     }
     @Test
     public void testTurn(){
@@ -56,10 +54,10 @@ public class CarTest {
     public void testSwitchRemoteControlType() {
         Car car = new Car("blue","disposable","simple", 100);
         car.setRemoteControlType("simple");
-        car.switchRemoteControlType("advanced");
+        car.switchRemoteControlType();
         Assertions.assertEquals("advanced",car.getRemoteControlType());
-        car.switchRemoteControlType("wrongControlType");
-        Assertions.assertEquals("advanced",car.getRemoteControlType());
+        car.switchRemoteControlType();
+        Assertions.assertEquals("simple",car.getRemoteControlType());
     }
 
 
