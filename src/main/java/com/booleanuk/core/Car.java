@@ -34,4 +34,8 @@ public class Car {
     public void setControlType(ControlType controlType) {
         this.controlType = controlType;
     }
+
+    public void changeBattery(Battery battery) {
+        this.battery = battery;
+    }
 }

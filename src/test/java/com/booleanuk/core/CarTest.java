@@ -22,6 +22,5 @@ public class CarTest {
         car.changeBattery(new Battery(BatteryType.RECHARGABLE, 100d));
 
         Assertions.assertEquals(100d, car.getBattery().getBatteryLevel());
-
     }
 }
