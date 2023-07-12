@@ -41,4 +41,14 @@ public class RemoteControlledCarTest {
 
         assertEquals("Moving forward for: " + distance + "m", result);
     }
+
+    @Test
+    public void moveBackwardTest() {
+        RemoteControlledCar car = new RemoteControlledCar();
+        double distance = 20.45d;
+
+        String result = car.moveBackward(distance);
+
+        assertEquals("Moving backward for: " + distance + "m", result);
+    }
 }
