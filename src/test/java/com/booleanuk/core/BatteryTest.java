@@ -14,4 +14,9 @@ public class BatteryTest {
     public void getTypeTest() {
         Assertions.assertEquals("rechargable", battery.getType());
     }
+
+    @Test
+    public void getRemainingPercentageTest() {
+        Assertions.assertEquals(50, battery.getRemainingPercentage());
+    }
 }
