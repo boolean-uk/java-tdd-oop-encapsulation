@@ -1,40 +1,99 @@
 package com.booleanuk.core;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RemoteCarTest {
-    public static void main(String[] args) {
-        RemoteCar car = new RemoteCar();
+        @Test
+        public void testRemoteCarFunctionality() {
+            testSetCarColor();
+            testSetBattery();
+            testSetRemoteControl();
+            testGetBatteryPercentage();
+            testMoveForward();
+            testMoveBackward();
+            testStop();
+            testTurnLeft();
+            testTurnRight();
+            testReplaceBattery();
+            testChangeRemoteControlType();
+            testChangeBatteryType();
+        }
 
-        // I want to be able to decide on the colour of the car.
-        car.setColor("Red");
+        private void testSetCarColor() {
+            RemoteCar car = new RemoteCar();
+            car.setColor("Red");
+        }
 
-        // I want to be able to choose between rechargeable and disposable batteries.
-        Battery battery = new Battery("Rechargeable");
+        private void testSetBattery() {
+            RemoteCar car = new RemoteCar();
+            Battery battery = new Battery("Rechargeable");
+            battery.setPercentageRemaining(50);
+            car.setBattery(battery);
+        }
 
-        //I want to be able to see the battery percentage remaining
-        battery.setPercentageRemaining(50);
-        car.setBattery(battery);
+        private void testSetRemoteControl() {
+            RemoteCar car = new RemoteCar();
+            RemoteControl remoteControl = new RemoteControl("Advanced");
+            car.setRemoteControl(remoteControl);
+        }
 
-        int batteryPercentage = car.getBatteryPercentage();
-        System.out.println("Battery percentage: " + batteryPercentage);
+        private void testGetBatteryPercentage() {
+            RemoteCar car = new RemoteCar();
+            Battery battery = new Battery("Rechargeable");
+            battery.setPercentageRemaining(50);
+            car.setBattery(battery);
+            int batteryPercentage = car.getBatteryPercentage();
+            assertEquals(50, batteryPercentage);
+        }
 
-        // I want to choose between a simple and an advanced remote control.
-        RemoteControl remoteControl = new RemoteControl("Advanced");
-        car.setRemoteControl(remoteControl);
+        private void testMoveForward() {
+            RemoteCar car = new RemoteCar();
+            // Additional setup if needed
+            car.moveForward(10);
+        }
 
-        // I want to be able to move the car forward and backward a specific distance
-        car.moveForward(10);
-        car.moveBackward(5);
-        //I want to be able to stop the car from moving.
-        car.stop();
+        private void testMoveBackward() {
+            RemoteCar car = new RemoteCar();
+            car.moveBackward(5);
+        }
 
-        // I want to be able to turn the car left and right.
-        car.turnLeft();
-        car.turnRight();
+        private void testStop() {
+            RemoteCar car = new RemoteCar();
+            car.stop();
+        }
 
-        // I want to be able to replace the battery with either kind as needed.
-        Battery newBattery = new Battery("Disposable");
-        car.replaceBattery(newBattery);
+        private void testTurnLeft() {
+            RemoteCar car = new RemoteCar();
+            car.turnLeft();
+        }
+
+        private void testTurnRight() {
+            RemoteCar car = new RemoteCar();
+            car.turnRight();
+        }
+
+        private void testReplaceBattery() {
+            RemoteCar car = new RemoteCar();
+            Battery battery = new Battery("Rechargeable");
+            car.setBattery(battery);
+            Battery newBattery = new Battery("Disposable");
+            car.replaceBattery(newBattery);
+        }
+
+        private void testChangeRemoteControlType() {
+            RemoteCar car = new RemoteCar();
+            RemoteControl remoteControl = new RemoteControl("Advanced");
+            car.setRemoteControl(remoteControl);
+            RemoteControl newRemoteControl = new RemoteControl("Simple");
+            car.setRemoteControl(newRemoteControl);
+        }
+
+        private void testChangeBatteryType() {
+            RemoteCar car = new RemoteCar();
+            Battery battery = new Battery("Rechargeable");
+            car.setBattery(battery);
+            Battery newBattery = new Battery("Disposable");
+            car.setBattery(newBattery);
+        }
     }
-}
