@@ -13,4 +13,17 @@ public class CarTest {
         assertEquals("Car moved forward by 5km", car.move('f', 30));
         assertEquals("Car is out of fuel", car.move('f', 20));
     }
+
+    @Test
+    public void showBatteryTest() {
+        Car car = new Car();
+
+        assertEquals("Battery:  100%", car.showBatteryLevel());
+        car.move('f', 5);
+        assertEquals("Battery:  75%", car.showBatteryLevel());
+        car.move('f', 10);
+        assertEquals("Battery:  25%", car.showBatteryLevel());
+        car.move('f', 30);
+        assertEquals("Battery:  0%", car.showBatteryLevel());
+    }
 }
