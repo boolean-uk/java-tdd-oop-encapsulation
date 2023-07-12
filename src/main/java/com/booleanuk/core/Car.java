@@ -1,9 +1,16 @@
 package com.booleanuk.core;
 
 public class Car {
+    private boolean isRechargeable;
     private int batteryLevel;
+
     public Car() {
         this.batteryLevel = 100;
+    }
+
+    public Car(boolean isRechargeable) {
+        this.batteryLevel = 100;
+        this.isRechargeable = isRechargeable;
     }
 
     public String move(char direction, int distance) {
@@ -23,5 +30,9 @@ public class Car {
 
     public String showBatteryLevel() {
         return "Battery:  " + this.batteryLevel + "%";
+    }
+
+    public String changeBattery() {
+        return this.isRechargeable ? "Recharged the battery" : "Changed the battery";
     }
 }
