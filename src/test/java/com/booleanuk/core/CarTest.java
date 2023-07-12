@@ -20,4 +20,13 @@ public class CarTest {
         assertEquals("Blue",car.getColor());
 
     }
+
+    @Test
+    void shouldReturnBatteryTypeDisposable(){
+        //given
+        car.choseBattery(BatteryType.disposable);
+        //then
+        assertEquals(BatteryType.disposable,car.getBattery().batteryType);
+
+    }
 }
