@@ -18,6 +18,11 @@ public class CarTest {
     public void testColourChange(){
         car.changeColour("white");
         Assertions.assertEquals("white",car.getColour());
+    }
 
+    @Test
+    public void testBatteryChargeStatus(){
+        car.batteryChargeStatus();
+        Assertions.assertEquals(100,car.batteryChargeStatus());
     }
 }
