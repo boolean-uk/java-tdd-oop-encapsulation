@@ -9,7 +9,7 @@ public class BatteryTest {
 
     @BeforeEach
     public void setup() {
-        battery = new Battery();
+        battery = new Battery("rechargable", 88);
     }
     @Test
     public void BatteryGetersAndSettersTest() {
