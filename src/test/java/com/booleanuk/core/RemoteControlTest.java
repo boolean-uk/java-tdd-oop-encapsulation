@@ -11,7 +11,7 @@ public class RemoteControlTest {
     }
 
     @Test
-    public getTypeTest() {
+    public void getTypeTest() {
         Assertions.assertEquals("advanced", remoteControl.getTypeControl());
     }
 }

@@ -7,4 +7,8 @@ public class RemoteControl {
     public RemoteControl(String type) {
         this.type = type;
     }
+
+    public String getTypeControl() {
+        return type;
+    }
 }
