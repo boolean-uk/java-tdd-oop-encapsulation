@@ -28,4 +28,17 @@ public class RemoteControlledCar {
     public String moveBackward(double distance) {
         return "Moving backward for: " + distance + "m";
     }
+
+    public String stop(){
+        return "Car stopped";
+    }
+
+    public String turn(String direction){
+        return "Turned " + direction;
+    }
+
+    public String replaceBattery(Battery newBattery){
+        battery = newBattery;
+        return "Battery replaced to: " + battery.toString();
+    }
 }
