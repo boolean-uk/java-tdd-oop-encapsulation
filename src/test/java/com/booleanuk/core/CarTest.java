@@ -18,4 +18,11 @@ public class CarTest {
         Assertions.assertEquals(50, car.getBatteryPercentage());
         Assertions.assertNotEquals(70, car.getBatteryPercentage());
     }
+
+    @Test
+    public void moveForwardTest() {
+        Assertions.assertEquals(0, car.getDistance());
+        car.moveForward(40);
+        Assertions.assertEquals(40,car.getDistance());
+    }
 }
