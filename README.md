@@ -83,6 +83,8 @@ Calculator
     subtract(num1, num2)
     print(message)
 ```
+![](./assets/ex1.PNG)
+
 
 ## Exercise 2
 
