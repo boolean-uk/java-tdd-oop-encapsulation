@@ -18,4 +18,8 @@ public class Car {
     public void changeColour(String colour) {
         this.colour = colour;
     }
+
+    public int batteryChargeStatus() {
+        return this.battery.getChargeStatus();
+    }
 }
