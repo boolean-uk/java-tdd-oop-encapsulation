@@ -1,5 +1,6 @@
 package com.booleanuk.core;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,12 +14,23 @@ public class BatteryTest {
     }
 
     @Test
-    public static void testGetRemainingPercentageShouldReturn100() {
+    public void testGetRemainingPercentageShouldReturn100() {
         // Execute
         int actual = battery.getRemainingPercentage();
 
         // Verify
         int expected = 100;
-        assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testDrainBatteryShouldReturn90() {
+        // Execute
+        battery.drainBattery(10);
+        int actual = battery.getRemainingPercentage();
+
+        // Verify
+        int expected = 90;
+        Assertions.assertEquals(expected, actual);
     }
 }
