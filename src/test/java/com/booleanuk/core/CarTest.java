@@ -25,4 +25,17 @@ public class CarTest {
         car.batteryChargeStatus();
         Assertions.assertEquals(100,car.batteryChargeStatus());
     }
+
+    @Test
+    public void turnLeftTest(){
+
+        Assertions.assertEquals("Car has turned left", car.turnLeft());
+    }
+
+    @Test
+    public void turnRightTest(){
+
+        Assertions.assertEquals("Car has turned right", car.turnRight());
+    }
+
 }
