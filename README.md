@@ -118,7 +118,7 @@ Now that you've practiced encapsulation, introduce this concept into your Bob's 
 
 Refactor your existing code if necessary. You should end up with multiple single purpose classes.
 
-## Test Output
+## TestCar Output
 
 ![](./assets/run-a-test.PNG)
 
