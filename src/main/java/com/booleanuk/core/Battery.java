@@ -9,4 +9,8 @@ public class Battery {
         this.type = type;
         this.percentageRemaining = percentageRemaining;
     }
+
+    public String getType() {
+        return type;
+    }
 }
