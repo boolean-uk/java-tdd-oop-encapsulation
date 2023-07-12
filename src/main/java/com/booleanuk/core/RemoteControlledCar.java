@@ -7,18 +7,16 @@ public class RemoteControlledCar {
 
     public RemoteControlledCar() {
         this.color = "red";
-        this.battery = new Battery("rechargable", 100);
+        this.battery = new Battery("rechargeable", 100);
         this.remoteControl = "simple";
-    }
-
-    public RemoteControlledCar(String color, Battery battery, String remoteControl) {
-        this.color = color;
-        this.battery = battery;
-        this.remoteControl = remoteControl;
     }
 
     public String setColor(String color) {
         this.color = color;
-        return "Changed car color to: " + color;
+        return "Changed color to: " + color;
+    }
+
+    public String setRemoteControl(String remoteControl) {
+        return "";
     }
 }
