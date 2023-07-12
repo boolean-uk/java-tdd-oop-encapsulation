@@ -1,6 +1,6 @@
 | Classes | Members                     | Methods                                   | Scenario                                | Outputs       |
 |---------|-----------------------------|-------------------------------------------|-----------------------------------------|---------------|
-| `Car`   | `String Colour`             | `double getBatteryPercentage()`           | Get current battery level               | battery level |
+| `Car`   | `Colour colour`             | `double getBatteryPercentage()`           | Get current battery level               | battery level |
 |         | `Battery battery`           | `void moveForward(int distance)`          | Move car forward by specified distance  |               |
 |         | `ControlType controlType`   | `void moveBackward(int distance)`         | Move car backward by specified distance |               |
 |         | `boolean isMoving`          | `void stopCar()`                          | Stop car from moving                    |               |
