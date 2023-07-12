@@ -99,9 +99,8 @@ RemoteControlledCar
     remoteControl: String,
     batteryPercentage: int,
     distance: int,
-    battery: String
     
-    setBattery(Sting battery): void
+    changeBattery(Sting battery): void
     changeColour(String color): void
     setRemoteControl(String remoteControl): void
     showBatteryPercentage(RemoteControlledCar car): int
