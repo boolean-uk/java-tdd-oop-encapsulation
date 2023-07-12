@@ -18,6 +18,7 @@ public class RemoteControlledCar {
     }
 
     public String setColor(String color) {
-        return "";
+        this.color = color;
+        return "Changed car color to: " + color;
     }
 }
