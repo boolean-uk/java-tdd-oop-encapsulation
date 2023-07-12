@@ -18,5 +18,11 @@ public class Car {
         return battery.getPercentageRemaining();
     }
 
+    public int getDistance() {
+        return distance;
+    }
 
+    public void moveForward(int distance) {
+        this.distance += distance;
+    }
 }
