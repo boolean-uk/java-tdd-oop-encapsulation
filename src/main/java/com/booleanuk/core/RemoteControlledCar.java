@@ -6,14 +6,15 @@ public class RemoteControlledCar {
     String remoteControl;
 
     public String stop(){
-        return "";
+        return "Car stopped";
     }
 
     public String turn(String direction){
-        return "";
+        return "Turned " + direction;
     }
 
-    public String replaceBattery(Battery battery){
-        return "";
+    public String replaceBattery(Battery newBattery){
+        battery = newBattery;
+        return "Battery replaced to: " + battery.toString();
     }
 }

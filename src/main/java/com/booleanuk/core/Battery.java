@@ -15,6 +15,11 @@ public class Battery {
     }
 
     public int checkPercentageRemaining(){
-        return 0;
+        return percentageRemaining;
+    }
+
+    @Override
+    public String toString() {
+        return type + " battery with " + percentageRemaining + "% remaining";
     }
 }
