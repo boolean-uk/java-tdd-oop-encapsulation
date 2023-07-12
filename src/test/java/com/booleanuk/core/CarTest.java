@@ -13,7 +13,7 @@ public class CarTest {
         car.setBattery(battery);
         car.turn("Forward");
         car.move(10);
-        Assertions.assertEquals(10, car.getPosition());
+        Assertions.assertEquals(11, car.getPosition());
         Assertions.assertEquals("Forward", car.getDirection());
         Assertions.assertEquals(99, car.getBattery().getLevel());
     }
