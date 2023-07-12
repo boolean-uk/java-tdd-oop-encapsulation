@@ -59,7 +59,15 @@ public class CarTest {
         //when
         car.moveForward(10);
 
-        assertEquals(10,car.getTraveledDistance());
+        assertEquals(110,car.getTraveledDistance());
+    }
+
+    @Test
+    void shouldMoveCarBackward10Miles(){
+        //when
+        car.moveBackward(10);
+
+        assertEquals(90,car.getTraveledDistance());
     }
 
 }

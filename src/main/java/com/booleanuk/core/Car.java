@@ -17,7 +17,7 @@ public class Car {
         this.color = color;
         this.battery = battery;
         this.controlType = controlType;
-        traveledDistance = 0;
+        traveledDistance = 100;
     }
 
     public String getColor() {
@@ -51,5 +51,9 @@ public class Car {
 
     public double getTraveledDistance() {
         return traveledDistance;
+    }
+
+    public void moveBackward(double distance) {
+        traveledDistance-=distance;
     }
 }
