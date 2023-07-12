@@ -26,4 +26,13 @@ public class CarTest {
         car.move('f', 30);
         assertEquals("Battery:  0%", car.showBatteryLevel());
     }
+
+    @Test
+    public void changeBattery() {
+        Car car1 = new Car(true);
+        Car car2 = new Car(false);
+
+        assertEquals("Recharged the battery", car1.changeBattery());
+        assertEquals("Changed the battery", car2.changeBattery());
+    }
 }
