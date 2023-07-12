@@ -93,6 +93,25 @@ Note that there is no "one correct way" to complete this exercise, this is an op
 Additionally, don't worry about creating complex logic. The focus of this exercise is at an encapsulation level, we don't need to see a method that can actually recharge a lithium battery!
 
 ```
+RemoteControlledCar
+    color: String,
+    battery: String,
+    remoteControl: String,
+    batteryPercentage: int,
+    distance: int,
+    
+    changeBattery(Sting battery): void
+    changeColour(String color): void
+    setRemoteControl(String remoteControl): void
+    showBatteryPercentage(RemoteControlledCar car): int
+    moveForward(int distance): void
+    moveBackward(int distance): void
+    stopCar(): void
+    turnLeft(): void
+    turnRight(): void
+    replaceBattery(String newBattery)
+
+
 I have a remote controlled car:
 
 I want to be able to decide on the colour of the car.
