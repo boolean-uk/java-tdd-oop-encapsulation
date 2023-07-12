@@ -7,7 +7,7 @@
 |          | brake()                                     |                | String   |
 |          | turn(bool isTurningRight)                   | true           | String   |
 |          |                                             | false          | String   |
-|          | replaceBattery(Battery batteryType)         | rechargable    | String   |
+|          | replaceBattery(bool isRechargable)          | rechargable    | String   |
 |          |                                             | disposable     | String   |
 | Battery  | getBatteryPercentage()                      | gets %battery  | integer  |
 |          |                                             |                |          |
