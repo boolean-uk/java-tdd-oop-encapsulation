@@ -29,6 +29,10 @@ public class Car {
         this.rechargable = rechargable;
     }
 
+    public void switchChargingType() {
+        this.rechargable = !this.rechargable;
+    }
+
     public boolean getRemoteControl() {
         return controlType;
     }
