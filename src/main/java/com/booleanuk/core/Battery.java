@@ -13,4 +13,8 @@ public class Battery {
     public String getType() {
         return type;
     }
+
+    public int getPercentageRemaining() {
+        return percentageRemaining;
+    }
 }

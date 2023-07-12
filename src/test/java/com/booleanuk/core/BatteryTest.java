@@ -17,6 +17,6 @@ public class BatteryTest {
 
     @Test
     public void getRemainingPercentageTest() {
-        Assertions.assertEquals(50, battery.getRemainingPercentage());
+        Assertions.assertEquals(50, battery.getPercentageRemaining());
     }
 }
