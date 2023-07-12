@@ -17,6 +17,7 @@ public class RemoteControlledCar {
     }
 
     public String setRemoteControl(String remoteControl) {
-        return "";
+        this.remoteControl = remoteControl;
+        return "Changed remote control to: " + remoteControl;
     }
 }
