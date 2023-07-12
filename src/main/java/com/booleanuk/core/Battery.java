@@ -13,5 +13,12 @@ public class Battery {
         return remainingPercentage;
     }
 
+    public void drainBattery(int percentage) {
+        if (percentage > remainingPercentage) {
+            throw new IllegalArgumentException("Battery cannot be drained more than 100%");
+        }
+        remainingPercentage -= percentage;
+    }
+
 
 }

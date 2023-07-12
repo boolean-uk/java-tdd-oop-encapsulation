@@ -33,4 +33,12 @@ public class BatteryTest {
         int expected = 90;
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void drainBatteryShouldThrowIllegalArgumentException() {
+        // Execute and Verify
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            battery.drainBattery(101);
+        });
+    }
 }
