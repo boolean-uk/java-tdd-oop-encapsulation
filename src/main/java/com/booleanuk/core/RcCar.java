@@ -16,7 +16,6 @@ public class RcCar {
     private double distanceTravelled;
     @Setter
     private Color color;
-    @Setter
     private BatteryType batteryType;
     private final RcType rcType;
     private int batteryPercentage;
