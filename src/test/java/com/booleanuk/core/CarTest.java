@@ -43,4 +43,17 @@ public class CarTest {
         Assertions.assertFalse(car.getRemoteControl());
     }
 
+    @Test
+    public void testBatteryPercent() {
+        Car car = new Car();
+
+        float batteryPercent = car.getBatteryPercent();
+
+        Assertions.assertEquals(100, batteryPercent);
+
+        car.setBatteryPercent(34.23);
+
+        Assertions.assertTrue(car.getBatteryPercent(), 34.23);
+    }
+
 }
