@@ -30,4 +30,17 @@ public class CarTest {
         Assertions.assertTrue(isRechargable);
     }
 
+    @Test
+    public void testRemoteControl() {
+        Car car = new Car();
+
+        boolean remoteControl = car.getRemoteControl();
+
+        Assertions.assertTrue(remoteControl);
+
+        boolean newRemoteControl = car.setControlType(false);
+
+        Assertions.assertFalse(newRemoteControl);
+    }
+
 }
