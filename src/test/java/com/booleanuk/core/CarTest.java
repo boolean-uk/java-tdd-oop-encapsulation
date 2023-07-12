@@ -12,4 +12,13 @@ public class CarTest {
         Assertions.assertTrue(car instanceof Car);
     }
 
+    @Test
+    public void testChangeColor() {
+        Car car = new Car();
+
+        car.setColor("red");
+
+        Assertions.assertTrue(car.getColor().equals("red"));
+    }
+
 }
