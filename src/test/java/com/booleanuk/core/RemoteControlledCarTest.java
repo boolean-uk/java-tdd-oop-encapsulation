@@ -31,4 +31,14 @@ public class RemoteControlledCarTest {
         assertEquals("Changed remote control to: " + newRemoteControl, result);
         assertEquals("advanced", car.remoteControl);
     }
+
+    @Test
+    public void moveForwardTest() {
+        RemoteControlledCar car = new RemoteControlledCar();
+        double distance = 20.45d;
+
+        String result = car.moveForward(distance);
+
+        assertEquals("Moving forward for: " + distance + "m", result);
+    }
 }

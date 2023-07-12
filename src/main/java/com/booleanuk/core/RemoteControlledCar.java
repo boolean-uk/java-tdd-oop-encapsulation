@@ -20,4 +20,8 @@ public class RemoteControlledCar {
         this.remoteControl = remoteControl;
         return "Changed remote control to: " + remoteControl;
     }
+
+    public String moveForward(double distance) {
+        return "";
+    }
 }
