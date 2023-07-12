@@ -1,19 +1,25 @@
 package com.booleanuk.core;
 
-import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CarTest {
 
+    Car car;
+
+
+    @BeforeEach
+    void prepare(){
+        car = new Car("red",new Battery(BatteryType.rechargable,100),ControlType.simple);
+    }
 
 
 
     @Test
      void ShouldChangeCarColor(){
-        //when
-        Car car = new Car("Red");
+
         //given
         car.changeColor("Blue");
         //then
@@ -29,4 +35,14 @@ public class CarTest {
         assertEquals(BatteryType.disposable,car.getBattery().batteryType);
 
     }
+
+
+    @Test
+    void choosRemoteOrAdvanced(){
+        //given
+        car.choseControl(ControlType.simple);
+        //then
+        assertEquals(ControlType.simple,car.getControlType());
+    }
+
 }
