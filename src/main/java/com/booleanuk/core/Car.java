@@ -20,4 +20,8 @@ public class Car {
         this.batteryLevel -= distance * 5;
         return "Car moved " + fullDirection + " by " + distance + "km";
     }
+
+    public String showBatteryLevel() {
+        return "Battery:  " + this.batteryLevel + "%";
+    }
 }
