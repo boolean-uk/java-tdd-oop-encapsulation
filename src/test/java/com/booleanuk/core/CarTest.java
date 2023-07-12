@@ -51,9 +51,9 @@ public class CarTest {
 
         Assertions.assertEquals(100, batteryPercent);
 
-        car.setBatteryPercent(34.23);
+        car.setBatteryPercent(34.23f);
 
-        Assertions.assertTrue(car.getBatteryPercent(), 34.23);
+        Assertions.assertEquals(car.getBatteryPercent(), 34.23f);
     }
 
 }
