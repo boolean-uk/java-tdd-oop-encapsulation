@@ -1,6 +1,6 @@
 package com.booleanuk.core;
 
-public class RemoteControl {
+class RemoteControl {
     private String type;
 
     public RemoteControl(String type) {
