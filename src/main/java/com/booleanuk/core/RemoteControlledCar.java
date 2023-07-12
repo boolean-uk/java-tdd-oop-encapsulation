@@ -22,6 +22,6 @@ public class RemoteControlledCar {
     }
 
     public String moveForward(double distance) {
-        return "";
+        return "Moving forward for: " + distance + "m";
     }
 }
