@@ -4,6 +4,7 @@ public class Car {
 
     private String color;
     private boolean rechargable = true;
+    private boolean controlType = true;
 
     public Car() {
         this.color = "white";
@@ -24,4 +25,14 @@ public class Car {
     public void setRechargable(boolean rechargable) {
         this.rechargable = rechargable;
     }
+
+    public boolean getRemoteControl() {
+        return controlType;
+    }
+
+    public void setControlType(boolean controlType) {
+        this.controlType = controlType;
+
+    }
+
 }

@@ -38,9 +38,9 @@ public class CarTest {
 
         Assertions.assertTrue(remoteControl);
 
-        boolean newRemoteControl = car.setControlType(false);
+        car.setControlType(false);
 
-        Assertions.assertFalse(newRemoteControl);
+        Assertions.assertFalse(car.getRemoteControl());
     }
 
 }
