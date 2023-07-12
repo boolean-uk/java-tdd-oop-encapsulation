@@ -21,4 +21,13 @@ public class CarTest {
         Assertions.assertTrue(car.getColor().equals("red"));
     }
 
+    @Test
+    public void testIsRechargable() {
+        Car car = new Car();
+
+        boolean isRechargable = car.getRechargable();
+
+        Assertions.assertTrue(isRechargable);
+    }
+
 }
