@@ -45,4 +45,21 @@ public class CarTest {
         assertEquals(ControlType.simple,car.getControlType());
     }
 
+    @Test
+    void ShouldReturnBatteryPercentage(){
+        //when
+        int percentage = car.getBatteryPercentage();
+
+        //then
+        assertEquals(100,car.getBattery().percent);
+    }
+
+    @Test
+     void shouldMoveCarForward10Miles(){
+        //when
+        car.moveForward(10);
+
+        assertEquals(10,car.getTraveledDistance());
+    }
+
 }
