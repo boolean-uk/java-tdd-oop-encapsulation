@@ -22,4 +22,12 @@ public class Car {
     public int batteryChargeStatus() {
         return this.battery.getChargeStatus();
     }
+
+    public String turnLeft() {
+        return "Car has turned left";
+    }
+
+    public String turnRight() {
+        return "Car has turned right";
+    }
 }
