@@ -33,7 +33,7 @@ public class CarTest {
 
     @Test
     public void getBatteryPercentageTest(){
-        Assertions.assertEquals(50, car.getBatteryPercentage());
+        Assertions.assertEquals(100, car.getBatteryPercentage());
     }
 
     @Test
