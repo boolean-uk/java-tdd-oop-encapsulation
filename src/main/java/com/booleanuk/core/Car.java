@@ -9,8 +9,11 @@ public class Car {
     private boolean controlType = true;
     private float batteryPercent = DEFAULT_BATTERY_PERCENT;
 
+    private float speed;
+
     public Car() {
         this.color = "white";
+        this.speed =0;
     }
 
     public String getColor() {
@@ -50,4 +53,15 @@ public class Car {
         this.batteryPercent = batteryPercent;
     }
 
+
+    public void addSpeed(float num ){
+        this.speed += num;
+    }
+    public void slowDown(float num ){
+        this.speed = this.speed - num < 0 ? 0 : this.speed - num;
+    }
+
+    public float getSpeed() {
+        return speed;
+    }
 }

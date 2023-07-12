@@ -56,4 +56,19 @@ public class CarTest {
         Assertions.assertEquals(car.getBatteryPercent(), 34.23f);
     }
 
+    @Test
+    public void testAddSpeed() {
+        Car car = new Car();
+        car.addSpeed(4);
+        Assertions.assertEquals(car.getSpeed(), 4);
+    }
+
+    @Test
+    public void testSlowDown() {
+        Car car = new Car();
+        car.addSpeed(4);
+        car.slowDown(2);
+        Assertions.assertEquals(car.getSpeed(), 2);
+    }
+
 }
