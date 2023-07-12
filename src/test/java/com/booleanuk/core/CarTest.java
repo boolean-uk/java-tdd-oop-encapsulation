@@ -8,7 +8,10 @@ public class CarTest {
     Car car;
 
     @BeforeEach
-    car = new Car("blue", BatteryType.RECHARGABLE, 50, RemoteType.SIMPLE);
+    public void setUp(){
+        car = new Car("blue", BatteryType.RECHARGABLE, RemoteType.SIMPLE);
+
+    }
 
     @Test
     public void setColourTest(){
@@ -55,7 +58,7 @@ public class CarTest {
 
     @Test
     public void stopTest(){
-        Assertions.assertEquals(true, car.stop());
+        Assertions.assertTrue(car.stop());
     }
 
     @Test
