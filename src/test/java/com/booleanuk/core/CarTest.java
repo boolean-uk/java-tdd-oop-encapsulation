@@ -30,5 +30,12 @@ public class CarTest {
         car.setHasAdvancedControl(true);
         Assertions.assertTrue(car.hasAdvancedControl());
     }
-   
+    @Test
+    public void testGetBatteryPercentage() {
+        Battery battery = new Battery("disposable");
+        Car car = new Car("Red", battery, false);
+        Assertions.assertEquals(100,car.getBattery().getPercentage());
+        car.getBattery().setPercentage(80);
+        Assertions.assertEquals(80,car.getBattery().getPercentage());
+    }
 }
