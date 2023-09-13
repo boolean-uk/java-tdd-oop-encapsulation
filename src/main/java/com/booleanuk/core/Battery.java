@@ -2,8 +2,8 @@ package com.booleanuk.core;
 
 public class Battery {
 
-    public String type;
-    public int remainingPercentage;
+    private String type;
+    private int remainingPercentage;
 
     public Battery() {}
     public Battery(String type, int remainingPercentage) {
