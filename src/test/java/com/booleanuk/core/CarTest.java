@@ -44,6 +44,9 @@ public class CarTest {
         Battery battery = new Battery("disposable");
         Car car = new Car("Red", battery, false);
         Assertions.assertEquals("The car moved forth 1 kilometer(s).",car.moveCar("forth", 1));
+        Assertions.assertTrue(car.isMoving());
+        car.stopCar();
+        Assertions.assertFalse(car.isMoving());
         Assertions.assertEquals("The car moved back 2 kilometer(s).",car.moveCar("back", 2));
     }
 }

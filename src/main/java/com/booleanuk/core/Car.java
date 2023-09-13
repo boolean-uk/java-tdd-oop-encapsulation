@@ -59,7 +59,12 @@ public class Car {
     }
 
     public String moveCar(String direction, int kilometers) {
+        this.isMoving = true;
         return String.format("The car moved %s %d kilometer(s).",direction,kilometers);
     }
-  
+
+
+    public void stopCar(){
+        this.isMoving = false;
+    }
 }
