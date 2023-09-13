@@ -6,9 +6,7 @@ public class Car {
     private boolean hasAdvancedControl;
     private String direction;
     private boolean isMoving;
-
-
-
+    
     public Car(String color, Battery battery, boolean hasAdvancedControl) {
         this.setColor(color);
         this.setBattery(battery);
@@ -16,10 +14,10 @@ public class Car {
         this.direction = "";
         this.isMoving = false;
     }
+
     public String getColor() {
         return color;
     }
-
     public boolean setColor(String color) {
         if (color.isBlank()) {
             return false;
@@ -27,18 +25,15 @@ public class Car {
         this.color = color;
         return true;
     }
-
     public Battery getBattery() {
         return battery;
     }
-
     public void setBattery(Battery battery) {
         this.battery = battery;
     }
     public void replaceBattery(String type) {
         this.battery.setType(type);
     }
-
     public boolean hasAdvancedControl() {
         return hasAdvancedControl;
     }

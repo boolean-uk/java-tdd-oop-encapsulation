@@ -38,4 +38,12 @@ public class CarTest {
         car.getBattery().setPercentage(80);
         Assertions.assertEquals(80,car.getBattery().getPercentage());
     }
+
+    @Test
+    public void testMoveCar() {
+        Battery battery = new Battery("disposable");
+        Car car = new Car("Red", battery, false);
+        Assertions.assertEquals("The car moved forth 1 kilometer",car.moveCar("forth", 1));
+        Assertions.assertEquals("The car moved back 2 kilometers",car.moveCar("back", 2));
+    }
 }
