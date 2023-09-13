@@ -6,7 +6,7 @@ public class Car {
     private boolean hasAdvancedControl;
     private String direction;
     private boolean isMoving;
-    
+
     public Car(String color, Battery battery, boolean hasAdvancedControl) {
         this.setColor(color);
         this.setBattery(battery);
@@ -57,4 +57,9 @@ public class Car {
     public void setMoving(boolean moving) {
         isMoving = moving;
     }
+
+    public String moveCar(String direction, int kilometers) {
+        return String.format("The car moved %s %d kilometer(s).",direction,kilometers);
+    }
+  
 }
