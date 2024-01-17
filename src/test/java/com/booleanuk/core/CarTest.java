@@ -1,5 +1,6 @@
 package com.booleanuk.core;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class CarTest {
@@ -8,6 +9,8 @@ public class CarTest {
     public void testSetBatteries() {
         Car car = new Car("Blue", "Rechargable");
 
+        car.setBatteries("Disposable");
+        Assertions.assertEquals("Disposable", car.getBatteries());
     }
 
     @Test
