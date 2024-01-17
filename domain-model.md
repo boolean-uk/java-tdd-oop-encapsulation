@@ -34,10 +34,10 @@ I want to be able to replace the battery with either kind as needed.
 | turnCar(boolean right)                      |                     | Car turns right  | String "Car turns right" |
 |                                             |                     | Car turns left   | String "Car turns left"  |
 ### Class Battery
-| Method                               | Members | Scenario         | Return                           |
-|--------------------------------------|---------|------------------|----------------------------------|
-| rechargeable(Boolean rechargeable)   |         | Set rechargeable | String "Battery is rechargeable" |
-|                                      |         | Set disposable   | String "Battery is disposable"   |
-| percentage()                         |         | Show percentage  | int percentage                   |
-| replaceBattery(Boolean reachable )   |         | Set rechargeable | String "Battery is rechargeable" |
-|                                      |         | Set disposable   | String "Battery is disposable"   |
+| Method                               | Members        | Scenario         | Return                           |
+|--------------------------------------|----------------|------------------|----------------------------------|
+| rechargeable(Boolean rechargeable)   | String battery | Set rechargeable | String "Battery is rechargeable" |
+|                                      |                | Set disposable   | String "Battery is disposable"   |
+| percentage()                         | int percentage | Show percentage  | int percentage                   |
+| replaceBattery(Boolean reachable )   | String battery | Set rechargeable | String "Battery is rechargeable" |
+|                                      |                | Set disposable   | String "Battery is disposable"   |
