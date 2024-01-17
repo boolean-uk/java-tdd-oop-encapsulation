@@ -24,13 +24,4 @@ public class RemoteControlledCarBatteryTest {
 
         Assertions.assertEquals("Your battery is at: 30%", result);
     }
-
-    @Test
-    public void testMoveCarBackwardOrForward() {
-        RemoteControlledCarBattery remoteControlledCarBattery = new RemoteControlledCarBattery();
-
-        String result = remoteControlledCarBattery.moveCarBackOrForth(100, "backwards");
-
-        Assertions.assertEquals("Your car moved " +  "100" + "m" + " backwards.", result);
-    }
 }

@@ -24,4 +24,14 @@ public class RemoteControlledCarTest {
 
         Assertions.assertEquals("Chosen remote control type: " + "Simple.", result);
     }
+
+    //User Story 5
+    @Test
+    public void testMoveCarBackwardOrForward() {
+        RemoteControlledCar remoteControlledCar = new RemoteControlledCar();
+
+        String result = remoteControlledCar.moveCarBackOrForth(100, "backwards");
+
+        Assertions.assertEquals("Your car moved " +  "100" + "m" + " backwards.", result);
+    }
 }
