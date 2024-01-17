@@ -21,4 +21,9 @@ public class RemoteControlledCar {
         return "Your car moved " +  distance + "m " + direction + ".";
     }
 
+    //User Story 6
+    public String stopCar() {
+        return "Stopped.";
+    }
+
 }
