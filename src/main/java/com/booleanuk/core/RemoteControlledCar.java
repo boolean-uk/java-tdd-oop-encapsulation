@@ -12,7 +12,7 @@ public class RemoteControlledCar {
     }
 
     public String chooseCarRemoteControl(String remoteControlType) {
-        return "Chosen remote control type: " + "Simple.";
+        return "Chosen remote control type: " + remoteControlType + ".";
     }
 
 }
