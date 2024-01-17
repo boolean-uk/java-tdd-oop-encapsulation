@@ -56,6 +56,7 @@ public class Car {
     }
 
     public boolean moveCarForward() {
+        this.batteryPercentage--;
         this.positionY++;
         System.out.println(this.getPositionX() + ":" + this.getPositionY());
         return true;
@@ -66,6 +67,7 @@ public class Car {
     }
 
     public boolean moveCarBackwards() {
+        this.batteryPercentage--;
         this.positionY--;
         System.out.println(this.getPositionX() + ":" + this.getPositionY());
         return true;
@@ -82,6 +84,7 @@ public class Car {
     }
 
     public boolean moveCarRight() {
+        this.batteryPercentage--;
         this.positionX++;
         System.out.println(this.getPositionX() + ":" + this.getPositionY());
 
@@ -89,6 +92,7 @@ public class Car {
     }
 
     public boolean moveCarLeft() {
+        this.batteryPercentage--;
         this.positionX--;
         System.out.println(this.getPositionX() + ":" + this.getPositionY());
         return true;
