@@ -7,11 +7,21 @@ public class RemoteControlledCarTest {
 
     //User Story 1
     @Test
-    public void testTeturnCarColor() {
+    public void testReturnCarColor() {
         RemoteControlledCar remoteControlledCar = new RemoteControlledCar();
 
         String result = remoteControlledCar.chooseCarColor("Blue");
 
         Assertions.assertEquals("Chosen car color: " + "Blue.", result);
+    }
+
+    //User Story 3
+    @Test
+    public void testReturnRemoteControlType() {
+        RemoteControlledCar remoteControlledCar = new RemoteControlledCar();
+
+        String result = remoteControlledCar.chooseCarRemoteControl("Simple");
+
+        Assertions.assertEquals("Chosen remote control type: " + "Simple.", result);
     }
 }

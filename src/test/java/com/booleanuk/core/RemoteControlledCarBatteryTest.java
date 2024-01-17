@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class RemoteControlledCarBatteryTest {
 
+    //User Story 2
     @Test
     public void testChooseCarBattery() {
         RemoteControlledCarBattery remoteControlledCarBattery = new RemoteControlledCarBattery();
