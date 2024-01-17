@@ -36,4 +36,17 @@ public class Car {
         return this.batteries;
 
     }
+
+    public String getRemoteControll() {
+        return this.remoteControll;
+    }
+
+    public boolean setRemoteControll(String remoteControll) {
+        if(remoteControll.equalsIgnoreCase("Simple") || remoteControll.equalsIgnoreCase("Advanced")) {
+            this.remoteControll = remoteControll;
+            return true;
+        }
+
+        return false;
+    }
 }
