@@ -28,4 +28,20 @@ public class RemoteCar {
         Arrays.sort(attributes);
         return attributes;
     }
+
+    public String changeColour(String colour){
+        remoteCar.put("Colour", colour);
+        return "Colour changed to " + colour;
+    }
+
+    public String addSteering(boolean advanced){
+        if (advanced){
+            remoteCar.put("Steering", "advanced");
+            return "Advanced steering activated";
+        }else {
+            remoteCar.put("Steering", "simple");
+        }
+        return "Simple steering activated";
+    }
+
 }

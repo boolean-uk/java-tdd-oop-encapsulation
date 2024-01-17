@@ -18,9 +18,17 @@ public class RemoteCarTest {
     @Test
     public void testChangeColour(){
         RemoteCar newCar = new RemoteCar();
-        HashMap<String, String> testCar= newCar.remoteCar;
-        Assertions.assertEquals("red",newCar.remoteCar.get("Colour"));
         Assertions.assertEquals("Colour changed to red", newCar.changeColour("red"));
+        Assertions.assertEquals("red",newCar.remoteCar.get("Colour"));
+        Assertions.assertArrayEquals(new String[]{"Battery percentage: null","Battery type: null",
+                "Colour: red","Mileage: null","Steering: null"}, newCar.carStatus());
+    }
+
+    @Test
+    public void testAddSteering(){
+        RemoteCar newCar = new RemoteCar();
+        Assertions.assertEquals("Advanced steering activated",
+                newCar.addSteering(true));
     }
 
 }
