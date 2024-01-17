@@ -18,7 +18,7 @@ public class RemoteControlledCar {
 
     //User Story 5
     public String moveCarBackOrForth(int distance, String direction) {
-        return "Your car moved " +  "100" + "m" + " backwards.";
+        return "Your car moved " +  distance + "m " + direction + ".";
     }
 
 }
