@@ -50,7 +50,7 @@ public class RemoteControlledCarTest {
     public void testMoveCarLeftOrRight() {
         RemoteControlledCar remoteControlledCar = new RemoteControlledCar();
 
-        String result = remoteControlledCar.moveCarLeftOrRight("Left");
+        String result = remoteControlledCar.moveCarLeftOrRight("left");
 
         Assertions.assertEquals("Car is moving " + "left.", result);
     }
