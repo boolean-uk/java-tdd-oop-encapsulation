@@ -28,6 +28,10 @@ public class CarTest {
     }
     @Test
     public void testGetBatteryPercentage() {
+        Car car = new Car("Blue", "Rechargable", "Simple");
+
+        Assertions.assertEquals(100.00, car.getBatteryPercentage());
+
 
     }
     @Test
