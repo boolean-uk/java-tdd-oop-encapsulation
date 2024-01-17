@@ -9,8 +9,10 @@ public class CarTest {
     public void testSetBatteries() {
         Car car = new Car("Blue", "Rechargable");
 
-        car.setBatteries("Disposable");
+        Assertions.assertTrue(car.setBatteries("Disposable"));
         Assertions.assertEquals("Disposable", car.getBatteries());
+        Assertions.assertFalse(car.setBatteries("Wrong Input"));
+
     }
 
     @Test

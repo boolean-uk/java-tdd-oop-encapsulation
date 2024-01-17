@@ -16,4 +16,20 @@ public class Car {
     }
 
 
+    public boolean setBatteries(String batteries) {
+
+        if(batteries.equalsIgnoreCase("Rechargable") || batteries.equalsIgnoreCase("Disposable")) {
+            this.batteries = batteries;
+            return true;
+        }
+
+
+        return false;
+    }
+
+    public String getBatteries() {
+
+        return this.batteries;
+
+    }
 }
