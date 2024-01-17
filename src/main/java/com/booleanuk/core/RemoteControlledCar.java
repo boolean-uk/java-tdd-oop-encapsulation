@@ -8,7 +8,7 @@ public class RemoteControlledCar {
 
     //User Story 1
     public String chooseCarColor(String color) {
-        return "New car color: " + color + ".";
+        return "Chosen car color: " + color + ".";
     }
 
     //User Story 4

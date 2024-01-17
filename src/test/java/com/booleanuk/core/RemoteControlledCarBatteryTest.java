@@ -12,7 +12,7 @@ public class RemoteControlledCarBatteryTest {
 
         String result = remoteControlledCarBattery.chooseCarBattery("Rechargeable");
 
-        Assertions.assertEquals("Chosen car batter: " + "Rechargeable.", result);
+        Assertions.assertEquals("Chosen car battery: " + "Rechargeable.", result);
     }
 
     //User Story 4
