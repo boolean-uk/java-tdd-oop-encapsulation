@@ -11,4 +11,8 @@ public class RemoteControlledCar {
         return "New car color: " + color + ".";
     }
 
+    public String chooseCarRemoteControl(String remoteControlType) {
+        return "Chosen remote control type: " + "Simple.";
+    }
+
 }
