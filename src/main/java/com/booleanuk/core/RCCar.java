@@ -22,18 +22,20 @@ public class RCCar {
     }
 
     public double moveForward(Double input) {
-        return 0.0;
+        this.currentSpeed += input;
+        return this.currentSpeed;
     }
 
     public double moveBackwards(Double input) {
+        this.currentSpeed -= input;
+        return this.currentSpeed;
+    }
+
+    public double turnLeft(Double angle) {
         return 0.0;
     }
 
-    public double turnLeft(Double input) {
-        return 0.0;
-    }
-
-    public double turnRight(Double input) {
+    public double turnRight(Double angle) {
         return 0.0;
     }
 

@@ -28,4 +28,20 @@ public class RCCarTest {
         car.setBatteryPercentage(0.54);
         Assertions.assertEquals(0.54, car.batteryPercentage);
     }
+
+    @Test
+    public void testMoveForward() {
+        RCCar car = new RCCar("Yellow", "Simple", "Rechargable");
+
+        Assertions.assertEquals(22.3, car.moveForward(22.3));
+        Assertions.assertEquals(22.3+14.5, car.moveForward(14.5));
+    }
+
+    @Test
+    public void testMoveBackwards() {
+        RCCar car = new RCCar("Yellow", "Simple", "Rechargable");
+
+        Assertions.assertEquals(-22.3, car.moveBackwards(22.3));
+        Assertions.assertEquals(-22.3-14.5, car.moveBackwards(14.5));
+    }
 }
