@@ -25,8 +25,8 @@ I want to be able to replace the battery with either kind as needed.
 | Method                                      | Members             | Scenario         | Return                   |
 |---------------------------------------------|---------------------|------------------|--------------------------|
 |                                             | String color        |                  |                          |
-|                                             | String battery      |                  |                          |
-|                                             | String  controlType |                  |                          |
+|                                             | Boolean battery     |                  |                          |
+|                                             | Boolean controlType |                  |                          |
 | moveStraight(boolean forward, int distance) |                     | Car moves        | True                     |
 |                                             |                     | Car stuck        | False                    |
 | stopCar()                                   |                     | Car stops        | True                     |
