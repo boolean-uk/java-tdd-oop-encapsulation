@@ -19,7 +19,7 @@ public class RemoteControlledCarBattery {
 
     //User Story 8
     public String replaceCarBattery(String batteryType) {
-        return "New car battery: disposable";
+        return "New car battery: " + batteryType.toLowerCase();
     }
 
 }
