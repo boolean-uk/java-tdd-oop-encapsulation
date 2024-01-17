@@ -34,4 +34,14 @@ public class RemoteControlledCarTest {
 
         Assertions.assertEquals("Your car moved " +  "100" + "m" + " backwards.", result);
     }
+
+    //User Story 6
+    @Test
+    public void testCarIsStopped() {
+        RemoteControlledCar remoteControlledCar = new RemoteControlledCar();
+
+        String result = remoteControlledCar.stopCar();
+
+        Assertions.assertEquals("Stopped.", result);
+    }
 }

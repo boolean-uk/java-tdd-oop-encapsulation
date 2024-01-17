@@ -62,7 +62,7 @@
 |                     | String carModel  |                                             |                                      |                                                      |
 
 
-9. I want to be able to replace the battery with either kind as needed.
+8. I want to be able to replace the battery with either kind as needed.
 
 
 | Class                      | Member variables | Methods                                      | Scenario                                                                  | Output/Result                                 |
