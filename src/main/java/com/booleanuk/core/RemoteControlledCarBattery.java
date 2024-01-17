@@ -7,4 +7,9 @@ public class RemoteControlledCarBattery {
         return "Chosen car batter: " + batteryType + ".";
     }
 
+    //User Story 4
+    public String showBatteryPercentage(int batteryPercentage) {
+        return "Your battery is at: 30%";
+    }
+
 }
