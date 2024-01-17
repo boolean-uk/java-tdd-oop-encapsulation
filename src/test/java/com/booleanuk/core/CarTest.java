@@ -39,28 +39,29 @@ public class CarTest {
         Car car = new Car("Blue", "Rechargable", "Simple");
 
         Assertions.assertTrue(car.moveCarForward());
-        Assertions.assertEquals(51.00, car.getPositonX());
+        Assertions.assertEquals(51.00, car.getPositionY());
 
     }
     @Test
     public void testMoveCarBackwards() {
         Car car = new Car("Blue", "Rechargable", "Simple");
         Assertions.assertTrue(car.moveCarBackwards());
-        Assertions.assertEquals(49.00, car.getPositonX());
+
+        Assertions.assertEquals(49.00, car.getPositionY());
     }
     @Test
     public void testMoveCarRight() {
         Car car = new Car("Blue", "Rechargable", "Simple");
-        Assertions.assertTrue(car.moveCarForward());
-        Assertions.assertEquals(49.00, car.getPositonX());
+        Assertions.assertTrue(car.moveCarRight());
+        Assertions.assertEquals(51.00, car.getPositionX());
 
     }
     @Test
     public void testMoveCarLeft() {
         Car car = new Car("Blue", "Rechargable", "Simple");
 
-        Assertions.assertTrue(car.moveCarForward());
-        Assertions.assertEquals(49.00, car.getPositonX());
+        Assertions.assertTrue(car.moveCarLeft());
+        Assertions.assertEquals(49.00, car.getPositionX());
     }
     @Test
     public void testStopCar() {

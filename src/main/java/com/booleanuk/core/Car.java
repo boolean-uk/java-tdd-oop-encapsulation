@@ -54,4 +54,43 @@ public class Car {
     public double getBatteryPercentage() {
         return this.batteryPercentage;
     }
+
+    public boolean moveCarForward() {
+        this.positionY++;
+        System.out.println(this.getPositionX() + ":" + this.getPositionY());
+        return true;
+    }
+
+    public double getPositionX() {
+        return this.positionX;
+    }
+
+    public boolean moveCarBackwards() {
+        this.positionY--;
+        System.out.println(this.getPositionX() + ":" + this.getPositionY());
+        return true;
+    }
+
+    public boolean stopCar() {
+        System.out.println("Stopped at position: " + this.getPositionX() + ":" + this.getPositionY());
+        return true;
+
+    }
+
+    public double getPositionY() {
+        return this.positionY;
+    }
+
+    public boolean moveCarRight() {
+        this.positionX++;
+        System.out.println(this.getPositionX() + ":" + this.getPositionY());
+
+        return true;
+    }
+
+    public boolean moveCarLeft() {
+        this.positionX--;
+        System.out.println(this.getPositionX() + ":" + this.getPositionY());
+        return true;
+    }
 }
