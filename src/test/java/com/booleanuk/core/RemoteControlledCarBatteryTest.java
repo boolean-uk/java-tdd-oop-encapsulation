@@ -26,7 +26,7 @@ public class RemoteControlledCarBatteryTest {
     }
 
     @Test
-    public void testChooseCarBattery() {
+    public void testReplaceCarBattery() {
         RemoteControlledCarBattery remoteControlledCarBattery = new RemoteControlledCarBattery();
 
         String result = remoteControlledCarBattery.replaceCarBattery("Disposable");

@@ -17,4 +17,9 @@ public class RemoteControlledCarBattery {
         return "Your battery is at: " + remainingBatteryPercentage + "%";
     }
 
+    //User Story 8
+    public String replaceCarBattery(String batteryType) {
+        return "New car battery: disposable";
+    }
+
 }
