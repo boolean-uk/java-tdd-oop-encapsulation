@@ -7,8 +7,8 @@ public class CarTest {
     @Test
     public void getCarTest(){
         Car car = new Car("Yellow", false, true);
-        Assertions.assertEquals("black", car.getColor());
-        Assertions.assertFalse(car.getBattery());
+        Assertions.assertEquals("Yellow", car.getColor());
+        Assertions.assertFalse(car.getBattery().getBattery());
         Assertions.assertTrue(car.getControl());
     }
 }
