@@ -17,7 +17,8 @@ public class RCCar {
     }
 
     public String changeRCSetting(String setting) {
-        return "";
+        this.rcType = setting;
+        return this.rcType;
     }
 
     public double moveForward(Double input) {
