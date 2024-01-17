@@ -51,4 +51,7 @@ public class Car {
     }
 
 
+    public double getBatteryPercentage() {
+        return this.batteryPercentage;
+    }
 }
