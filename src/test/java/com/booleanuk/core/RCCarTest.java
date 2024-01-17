@@ -67,4 +67,10 @@ public class RCCarTest {
         Assertions.assertEquals(0, car.stop());
     }
 
+    @Test
+    public void testChangeBattery() {
+        RCCar car = new RCCar("Yellow", "Simple", "Rechargable");
+
+        Assertions.assertEquals("Disposable", car.replaceBattery("Disposable"));
+    }
 }
