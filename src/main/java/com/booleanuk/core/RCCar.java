@@ -5,6 +5,7 @@ public class RCCar {
     public String colour;
     public String rcType;
     public double currentSpeed;
+    public double currentTurnAngle;
     public String batteryType;
     public double batteryPercentage;
 
@@ -12,6 +13,7 @@ public class RCCar {
         this.colour = colour;
         this.rcType = rcType;
         this.currentSpeed = 0;
+        this.currentTurnAngle = 0;
         this.batteryType = batteryType;
         this.batteryPercentage = 1.0;
     }
@@ -32,15 +34,18 @@ public class RCCar {
     }
 
     public double turnLeft(Double angle) {
-        return 0.0;
+        this.currentTurnAngle = angle;
+        return this.currentTurnAngle;
     }
 
     public double turnRight(Double angle) {
-        return 0.0;
+        this.currentTurnAngle = angle;
+        return this.currentTurnAngle;
     }
 
     public double stop() {
-        return 0.0;
+        this.currentSpeed = 0;
+        return this.currentSpeed;
     }
 
     public String replaceBattery(String newBattery) {

@@ -44,4 +44,27 @@ public class RCCarTest {
         Assertions.assertEquals(-22.3, car.moveBackwards(22.3));
         Assertions.assertEquals(-22.3-14.5, car.moveBackwards(14.5));
     }
+
+    @Test
+    public void testTurnLeft() {
+        RCCar car = new RCCar("Yellow", "Simple", "Rechargable");
+
+        Assertions.assertEquals(30.5, car.turnLeft(30.5));
+    }
+
+    @Test
+    public void testTurnRight() {
+        RCCar car = new RCCar("Yellow", "Simple", "Rechargable");
+
+        Assertions.assertEquals(-30.5, car.turnRight(-30.5));
+    }
+
+    @Test
+    public void testToStop() {
+        RCCar car = new RCCar("Yellow", "Simple", "Rechargable");
+
+        car.moveForward(13.4);
+        Assertions.assertEquals(0, car.stop());
+    }
+
 }
