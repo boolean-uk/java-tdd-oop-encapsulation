@@ -6,8 +6,9 @@ public class RemoteControlledCar {
     public String carModel = "2020";
 
 
+    //User Story 1
     public String chooseCarColor(String color) {
-        return "New car color: " + "Blue.";
+        return "New car color: " + color + ".";
     }
 
 }
