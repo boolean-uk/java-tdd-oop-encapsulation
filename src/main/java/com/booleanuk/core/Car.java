@@ -10,9 +10,13 @@ public class Car {
     private double positionX;
     private double positionY;
 
-    public Car(String color, String batteries) {
+    public Car(String color, String batteries, String remoteControll) {
         this.color = color;
         this.batteries = batteries;
+        this.remoteControll = remoteControll;
+        this.batteryPercentage = 100.00;
+        this.positionX = 50.00;
+        this.positionY = 50.00;
     }
 
 

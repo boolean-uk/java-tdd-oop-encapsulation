@@ -7,7 +7,7 @@ public class CarTest {
 
     @Test
     public void testSetBatteries() {
-        Car car = new Car("Blue", "Rechargable");
+        Car car = new Car("Blue", "Rechargable", "Simple");
 
         Assertions.assertTrue(car.setBatteries("Disposable"));
         Assertions.assertEquals("Disposable", car.getBatteries());
@@ -17,6 +17,13 @@ public class CarTest {
 
     @Test
     public void testSetRemoteControll() {
+        Car car = new Car("Blue", "Rechargable", "Simple");
+
+        Assertions.assertEquals("Simple", car.getRemoteControll());
+        Assertions.assertTrue(car.setRemoteControll("Advanced"));
+        Assertions.assertEquals("Advanced", car.getRemoteControll());
+        Assertions.assertFalse(car.setRemoteControll("Wrong input"));
+
 
     }
     @Test
