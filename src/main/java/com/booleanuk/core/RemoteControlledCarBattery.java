@@ -9,7 +9,12 @@ public class RemoteControlledCarBattery {
 
     //User Story 4
     public String showBatteryPercentage(int batteryPercentage) {
-        return "Your battery is at: 30%";
+        int defaultBatteryPercentage = 100;
+
+        int remainingBatteryPercentage = defaultBatteryPercentage - batteryPercentage;
+
+
+        return "Your battery is at: " + remainingBatteryPercentage + "%";
     }
 
 }
