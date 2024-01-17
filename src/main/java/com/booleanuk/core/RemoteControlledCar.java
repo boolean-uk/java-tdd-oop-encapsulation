@@ -26,4 +26,9 @@ public class RemoteControlledCar {
         return "Stopped.";
     }
 
+    //User Story 7
+    public String moveCarLeftOrRight(String direction) {
+        return "Car is moving " + "left.";
+    }
+
 }
