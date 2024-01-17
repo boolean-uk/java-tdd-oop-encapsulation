@@ -12,6 +12,6 @@ public class RemoteControlledCarTest {
 
         String result = remoteControlledCar.chooseCarColor("Blue");
 
-        Assertions.assertEquals("New car color: " + "Blue.", result);
+        Assertions.assertEquals("Chosen car color: " + "Blue.", result);
     }
 }
