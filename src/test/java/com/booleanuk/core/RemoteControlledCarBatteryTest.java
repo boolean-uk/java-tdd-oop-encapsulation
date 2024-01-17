@@ -24,4 +24,13 @@ public class RemoteControlledCarBatteryTest {
 
         Assertions.assertEquals("Your battery is at: 30%", result);
     }
+
+    @Test
+    public void testChooseCarBattery() {
+        RemoteControlledCarBattery remoteControlledCarBattery = new RemoteControlledCarBattery();
+
+        String result = remoteControlledCarBattery.replaceCarBattery("Disposable");
+
+        Assertions.assertEquals("New car battery: disposable", result);
+    }
 }
