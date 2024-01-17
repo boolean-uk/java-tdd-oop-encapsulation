@@ -18,4 +18,14 @@ public class RCCarTest {
 
         Assertions.assertEquals("Simple", car.changeRCSetting("Simple"));
     }
+
+    @Test
+    public void testCheckBatteryPercentage() {
+        RCCar car = new RCCar("Yellow", "Simple", "Rechargable");
+
+        Assertions.assertEquals(1.0, car.batteryPercentage);
+
+        car.setBatteryPercentage(0.54);
+        Assertions.assertEquals(0.54, car.batteryPercentage);
+    }
 }

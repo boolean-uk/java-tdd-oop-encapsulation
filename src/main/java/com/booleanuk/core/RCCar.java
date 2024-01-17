@@ -44,4 +44,8 @@ public class RCCar {
     public String replaceBattery(String newBattery) {
         return "";
     }
+
+    public void setBatteryPercentage(double batteryPercentage) {
+        this.batteryPercentage = batteryPercentage;
+    }
 }
