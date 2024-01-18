@@ -69,6 +69,8 @@ I want to be able to replace the battery with either kind as needed.
 | turnLeft(int carId)  |                           | if car not turn | False                         |
 |                      |                           |                 |
 
+
+
 7.
 | Methods                       | Member variables | Scenario           | Outputs/Results/Return values |
 |-------------------------------|------------------|--------------------|-------------------------------|
