@@ -4,15 +4,15 @@ public class Car {
     private String color;
     private boolean rechargeableBatteries;
     private int motorPower;
-    private int turningWheelMotorPower;
+    private int wheelDegree;
     private int location;
     private int batteryPercentage;
 
-    public Car(String color,boolean rechargeableBatteries, int motorPower, int turningWheelMotorPower, int batteryPercentage) {
+    public Car(String color,boolean rechargeableBatteries, int motorPower, int wheelDegree, int batteryPercentage) {
         this.color = color;
         this.rechargeableBatteries = rechargeableBatteries;
         this.motorPower = motorPower;
-        this.turningWheelMotorPower = turningWheelMotorPower;
+        this.wheelDegree = wheelDegree;
         this.batteryPercentage = batteryPercentage;
         location = 0;
     }
@@ -35,5 +35,13 @@ public class Car {
 
     public void setMotorPower(int motorPower) {
         this.motorPower = motorPower;
+    }
+
+    public int getWheelDegree() {
+        return wheelDegree;
+    }
+
+    public void setWheelDegree(int wheelDegree) {
+        this.wheelDegree = wheelDegree;
     }
 }

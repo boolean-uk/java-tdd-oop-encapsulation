@@ -12,10 +12,14 @@ public class Controller {
     }
 
     public void moveCar(Car car, int time) {
-        car.runCar(10);
+        car.runCar(time);
     }
 
     public void setCarSpeed(Car car, int speed) {
         car.setMotorPower(speed);
+    }
+
+    public void turnWheels(Car car, int location) {
+        car.setWheelDegree(car.getWheelDegree() + location);
     }
 }
