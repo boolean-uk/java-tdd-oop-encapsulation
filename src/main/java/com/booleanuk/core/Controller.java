@@ -10,4 +10,8 @@ public class Controller {
     public int seeBatteryPercentage(Car car) {
         return car.getBatteryPercentage();
     }
+
+    public void moveCar(Car car, int time) {
+        car.runCar(10);
+    }
 }

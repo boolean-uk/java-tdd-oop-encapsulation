@@ -18,7 +18,7 @@ public class FullTest {
     @Test
     public void testGetBattery() {
         Controller con = new Controller(false);
-        Car car = new Car("blue", false, 0, 0, 100)
+        Car car = new Car("blue", false, 0, 0, 100);
         Assertions.assertEquals(100, con.seeBatteryPercentage(car));
     }
 
@@ -27,7 +27,7 @@ public class FullTest {
         Car car = new Car("blue", false, 5, 0, 100);
         Controller con1 = new Controller(false);
         Assertions.assertEquals(0, car.getLocation());
-        con1.moveCar(10);
+        con1.moveCar(car, 10);
         Assertions.assertEquals(50, car.getLocation());
     }
 }
