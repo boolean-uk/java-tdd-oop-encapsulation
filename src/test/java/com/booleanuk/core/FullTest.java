@@ -36,7 +36,7 @@ public class FullTest {
         Car car = new Car("blue", false, 0, 0, 100);
         Controller con1 = new Controller(false);
         Assertions.assertEquals(0, car.getMotorPower());
-        con1.setCarSpeed(10);
+        con1.setCarSpeed(car,10);
         Assertions.assertEquals(10, car.getMotorPower());
     }
 }
