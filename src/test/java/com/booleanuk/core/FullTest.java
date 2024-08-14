@@ -30,4 +30,13 @@ public class FullTest {
         con1.moveCar(car, 10);
         Assertions.assertEquals(50, car.getLocation());
     }
+
+    @Test
+    public void testSetCarSpeed() {
+        Car car = new Car("blue", false, 0, 0, 100);
+        Controller con1 = new Controller(false);
+        Assertions.assertEquals(0, car.getMotorPower());
+        con1.setCarSpeed(10);
+        Assertions.assertEquals(10, car.getMotorPower());
+    }
 }
