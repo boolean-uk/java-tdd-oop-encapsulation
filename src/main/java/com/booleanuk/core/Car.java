@@ -52,4 +52,12 @@ public class Car {
     public String getColor() {
         return color;
     }
+
+    public void setRechargeableBatteries(boolean rechargeableBatteries) {
+        this.rechargeableBatteries = rechargeableBatteries;
+    }
+
+    public boolean getRechargeableBatteries() {
+        return rechargeableBatteries;
+    }
 }
