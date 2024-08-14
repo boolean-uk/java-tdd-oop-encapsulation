@@ -48,4 +48,11 @@ public class FullTest {
         con1.turnWheels(car, -10);
         Assertions.assertEquals(-10, car.getWheelDegree());
     }
+
+    @Test
+    public void testSetColor() {
+        Car car = new Car("blue", false, 0, 0, 100);
+        car.setColor("green");
+        Assertions.assertEquals("green", car.getColor());
+    }
 }
