@@ -8,4 +8,8 @@ public class Controller {
         this.advanced = advanced;
         this.batteryPercentage = batteryPercentage;
     }
+
+    public int getBatteryPercentage() {
+        return batteryPercentage;
+    }
 }
