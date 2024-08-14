@@ -9,7 +9,7 @@ public class FullTest {
         Car car = new Car("blue", false, 0, 0);
         Controller con1 = new Controller(false, 100);
         Controller con2 = new Controller(true, 100);
-        Person p = new Person(car, con);
+        Person p = new Person(car, con1);
         Assertions.assertNotEquals(con2, p.getController());
         p.setController(con2);
         Assertions.assertEquals(con2, p.getController());
