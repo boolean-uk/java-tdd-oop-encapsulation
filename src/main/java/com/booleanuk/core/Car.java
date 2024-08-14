@@ -28,4 +28,12 @@ public class Car {
     public int getBatteryPercentage() {
         return batteryPercentage;
     }
+
+    public int getMotorPower() {
+        return motorPower;
+    }
+
+    public void setMotorPower(int motorPower) {
+        this.motorPower = motorPower;
+    }
 }

@@ -14,4 +14,8 @@ public class Controller {
     public void moveCar(Car car, int time) {
         car.runCar(10);
     }
+
+    public void setCarSpeed(Car car, int speed) {
+        car.setMotorPower(speed);
+    }
 }
