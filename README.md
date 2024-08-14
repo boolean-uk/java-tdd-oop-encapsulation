@@ -1,5 +1,7 @@
 # Object-oriented Programming - Encapsulation
 
+![E1](./assets/classDiagram_Exercise1.png)
+![E2](./assets/classDiagram_Exercise2.png)
 ## Learning Objectives
 - Define behaviour as the thing a program does
 - Define state as the thing a program knows
