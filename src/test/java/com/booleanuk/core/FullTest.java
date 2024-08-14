@@ -55,4 +55,11 @@ public class FullTest {
         car.setColor("green");
         Assertions.assertEquals("green", car.getColor());
     }
+
+    @Test
+    public void testSetRechargeableBatteries() {
+        Car car = new Car("blue", false, 0, 0, 100);
+        car.setRechargeableBatteries(true);
+        Assertions.assertTrue(car.getRechargeableBatteries());
+    }
 }
