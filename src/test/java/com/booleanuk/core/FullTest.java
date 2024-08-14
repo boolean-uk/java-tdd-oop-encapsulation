@@ -14,4 +14,10 @@ public class FullTest {
         p.setController(con2);
         Assertions.assertEquals(con2, p.getController());
     }
+
+    @Test
+    public void testGetBattery() {
+        Controller con = new Controller(false, 100);
+        Assertions.assertEquals(100, con.getBatteryPercentage());
+    }
 }
