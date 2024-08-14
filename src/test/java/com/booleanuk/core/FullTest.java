@@ -39,4 +39,13 @@ public class FullTest {
         con1.setCarSpeed(car,10);
         Assertions.assertEquals(10, car.getMotorPower());
     }
+
+    @Test
+    public void testTurnWheels() {
+        Car car = new Car("blue", false, 0, 0, 100);
+        Controller con1 = new Controller(false);
+        Assertions.assertEquals(0, car.getWheelDegree());
+        con1.turnWheels(car, -10);
+        Assertions.assertEquals(-10, car.getWheelDegree());
+    }
 }
