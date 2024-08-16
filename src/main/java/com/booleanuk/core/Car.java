@@ -47,4 +47,9 @@ public class Car {
          return false;
     }
 
+    public boolean setBatteryType(String batteryType) {
+        this.batteryType = batteryType;
+        return true;
+    }
+
 }
