@@ -14,4 +14,9 @@ public class Car {
         this.batteryType = battery;
     }
 
+    public boolean moveCarForward(int distance) {
+        batteryPercentage -= distance / 2;
+        return true;
+    }
+
 }
