@@ -5,29 +5,34 @@ Class Car {
     - battery: Battery
     - remoteControl: RemoteControl
 
-    + Car(color: String, battery Battery, remoteControl RemoteControl)
+    + Car(color: String, battery Battery, remoteControl RemoteControl): Car
 
-    + replaceBattery(): Boolean
-    + setColor(newColor: String): Boolean
-    + moveForward(distance: Integer):
-    + moveBackward(distance: Integer):
-    + stop():
-    + turnLeft():
-    + turnRight():
+    + setBattery(battery: Battery): void
+    + setColor(newColor: String): void
+    + setRemoteControl(remoteControl: RemoteControl): void
+
+    + moveForward(distance: Integer): String
+    + moveBackward(distance: Integer): String
+    + stop(): String
+    + turnLeft(): String
+    + turnRight(): String
 }
 
 Class Battery {
     - type: String
     - remainingBatteryPercentage: Integer
+
+    + Battery(type: String): Battery
     + getRemainingBatteryPercentage(): Integer
 }
 
 Class RemoteControl {
     - type: String
-    + RemoteControl(simpleOrAdvanced:String)
+
+    + RemoteControl(type: String): RemoteControl
 
 }
 
 @enduml
-I want to be able to replace the battery with either kind as needed.
+
 
