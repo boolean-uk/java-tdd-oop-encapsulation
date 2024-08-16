@@ -57,4 +57,12 @@ public class CarTest {
         Assertions.assertTrue(car.stopCar());
     }
 
+
+    @Test
+    public void testTurnCar() {
+        Car car = new Car("Green", "rechargeable");
+        Assertions.assertTrue(car.turnCar("left"));
+        Assertions.assertTrue(car.turnCar("right"));
+    }
+
 }
