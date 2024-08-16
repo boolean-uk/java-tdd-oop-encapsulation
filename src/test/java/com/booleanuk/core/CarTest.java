@@ -31,8 +31,8 @@ public class CarTest {
     @Test
     public void testSeeBatteryStatus() {
         Car car = new Car("Blue","Disposal","advanced");
-        int result = moveCarForwardOrBackward();
-        Assertions.assertTrue(result < initialBatteryLevel, "Battery level should be smaller after moving the car");
+        int result = car.moveCarForwardOrBackward("Rechargable", 10);
+        Assertions.assertTrue(result < car.initialBatteryLevel(), "Battery level should be smaller after moving the car");
 
     }
 
