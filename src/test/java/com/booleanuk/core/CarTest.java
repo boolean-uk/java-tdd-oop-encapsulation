@@ -22,4 +22,11 @@ public class CarTest {
         Assertions.assertTrue(car.move());
         Assertions.assertFalse(car.stop());
     }
+
+    @Test
+    public void testTurn(){
+        Assertions.assertEquals("vertical", car.turn(""));
+        Assertions.assertEquals("right", car.turn("right"));
+        Assertions.assertEquals("left", car.turn("left"));
+    }
 }

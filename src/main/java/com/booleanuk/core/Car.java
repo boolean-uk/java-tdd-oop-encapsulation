@@ -35,4 +35,18 @@ public class Car {
         return this.moving;
     }
 
+    public String turn(String s){
+        s.toLowerCase();
+        if(s.equals("vertical")){
+            this.direction = "vertical";
+        }
+        else if(s.equals("right")){
+            this.direction = "right";
+        }
+        else if(s.equals("left")){
+            this.direction = "left";
+        }
+        return direction;
+    }
+
 }
