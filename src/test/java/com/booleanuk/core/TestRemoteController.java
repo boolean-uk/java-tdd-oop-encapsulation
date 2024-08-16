@@ -9,6 +9,4 @@ public class TestRemoteController {
         RemoteController rc = new RemoteController();
     }
 
-    @Test
-    public void
 }

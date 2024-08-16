@@ -30,6 +30,7 @@ public class TestRemoteControlledCar {
         rc.turnDirectionToLeft(13);
         Assertions.assertEquals(rc.getDirectionInDegrees(), 77);
 
+
     }
 
 }
