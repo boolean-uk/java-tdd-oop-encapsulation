@@ -13,6 +13,10 @@ public class Battery {
         return this.remainingBatteryPercentage;
     }
 
+    public void setRemainingBatteryPercentage(int newRemainingBatteryPercentage){
+        this.remainingBatteryPercentage = newRemainingBatteryPercentage;
+    }
+
     public String getBatteryType(){
         return this.type;
     }

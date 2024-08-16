@@ -31,12 +31,33 @@ public class Car {
     }
 
     public String moveForward(int metres){
-        return "Car moved forward " + metres + " metres";
+        if (canMove(metres)){
+            for (int i = 0; i < metres; i++){
+                this.battery.setRemainingBatteryPercentage(this.battery.getRemainingBatteryPercentage()-1);
+            }
+            return "Car moved forward " + metres + " metres";
+        }
+
+        else return "Battery percentage too low to move this far";
     }
 
     public String moveBackward(int metres){
-        return "Car moved backward " + metres + " metres";
+        if (canMove(metres)){
+            for (int i = 0; i < metres; i++){
+                this.battery.setRemainingBatteryPercentage(this.battery.getRemainingBatteryPercentage()-1);
+            }
+            return "Car moved backwards " + metres + " metres";
+        }
+
+        else return "Battery percentage too low to move this far";
     }
+
+
+    public boolean canMove(int metres){
+        return battery.getRemainingBatteryPercentage() <= metres;
+    }
+
+
 
     public String stop(){
         return "Car has stopped.";
