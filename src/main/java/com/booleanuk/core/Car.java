@@ -35,7 +35,16 @@ public class Car {
     }
 
     public boolean turnCar(String direction) {
-        return true;
+       if (direction == null) {
+           throw new NullPointerException();
+       }
+       if (direction.equals("left")) {
+           return true;
+       } else if (direction.equals("right")) {
+           return true;
+       }
+        System.out.println("Invalid direction");
+         return false;
     }
 
 }
