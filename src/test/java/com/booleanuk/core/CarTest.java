@@ -12,13 +12,9 @@ public class CarTest {
         Assertions.assertNotNull(car);
         Assertions.assertEquals("Green", car.color);
         Assertions.assertEquals("rechargeable", car.batteryType);
-        Assertions.assertThrows(NullPointerException.class, () -> {
-            new Car(null, "rechargeable");
-        });
+        Assertions.assertThrows(NullPointerException.class, () -> new Car(null, "rechargeable"));
 
-        Assertions.assertThrows(NullPointerException.class, () -> {
-            new Car("Green", null);
-        });
+        Assertions.assertThrows(NullPointerException.class, () -> new Car("Green", null));
     }
 
     @Test
@@ -64,9 +60,7 @@ public class CarTest {
         Assertions.assertTrue(car.turnCar("left"));
         Assertions.assertTrue(car.turnCar("right"));
         Assertions.assertFalse(car.turnCar("up"));
-        Assertions.assertThrows(NullPointerException.class, () -> {
-            car.turnCar(null);
-        });
+        Assertions.assertThrows(NullPointerException.class, () -> car.turnCar(null));
     }
 
     @Test
@@ -75,9 +69,7 @@ public class CarTest {
         Assertions.assertTrue(car.setBatteryType("disposable"));
         Assertions.assertEquals("disposable", car.batteryType);
 
-        Assertions.assertThrows(NullPointerException.class, () -> {
-            car.setBatteryType(null);
-        });
+        Assertions.assertThrows(NullPointerException.class, () -> car.setBatteryType(null));
 
         Assertions.assertFalse(car.setBatteryType("invalid"));
     }
