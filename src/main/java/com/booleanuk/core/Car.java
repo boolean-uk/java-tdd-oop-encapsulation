@@ -3,14 +3,15 @@ package com.booleanuk.core;
 public class Car {
 
     final String color;
-    String battery;
+    String batteryType;
+    int batteryPercentage = 100;
 
     public Car(String color, String battery) {
         if (color == null || battery == null) {
             throw new NullPointerException();
         }
         this.color = color;
-        this.battery = battery;
+        this.batteryType = battery;
     }
 
 }
