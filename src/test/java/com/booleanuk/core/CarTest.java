@@ -115,5 +115,33 @@ public class CarTest {
         Assertions.assertEquals("Car has stopped.", stop);
     }
 
+    @Test
+    public void turnLeft(){
+        /*
+        I want to be able to turn the car left.
+        */
+
+        Battery battery = new Battery("disposable");
+        RemoteControl remoteControl = new RemoteControl("simple");
+        Car car = new Car("red", battery, remoteControl);
+
+        String turnLeft = car.turnLeft();
+        Assertions.assertEquals("Turning left.", turnLeft);
+    }
+
+    @Test
+    public void turnLeft(){
+        /*
+        I want to be able to turn the car right.
+        */
+
+        Battery battery = new Battery("disposable");
+        RemoteControl remoteControl = new RemoteControl("simple");
+        Car car = new Car("red", battery, remoteControl);
+
+        String turnRight = car.turnRight();
+        Assertions.assertEquals("Turning right.", turnRight);
+    }
+
 
 }
