@@ -56,6 +56,11 @@ class Battery{
     + getType(): String
     + getPowerLeftInPercent(): Double
     + getPower(): Double
+
+
+' for a more complete system then i would probably use
+' an interface for electronic components and keep
+' battery functions together.
 }
 
 @enduml
