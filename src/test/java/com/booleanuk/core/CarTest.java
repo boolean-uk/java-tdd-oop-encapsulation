@@ -14,9 +14,17 @@ public class CarTest {
         Assertions.assertEquals("advanced",car.remotecontrol);
     }
 
-
-    public String seeBattery() {
+    @Test
+    public void testSeeBatteryRechargable() {
         Car car = new Car("Blue","Rechargable","advanced");
-        seeBattery()
+        Assertions.assertEquals("The battery is rechargable",car.seeBattery());
+
+    }
+
+    @Test
+    public void testSeeBatteryNotChargable() {
+        Car car = new Car("Blue","Disposal","advanced");
+        Assertions.assertEquals("The battery is not rechargable",car.seeBattery());
+
     }
 }
