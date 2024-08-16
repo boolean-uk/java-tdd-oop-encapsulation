@@ -83,6 +83,34 @@ Calculator
     subtract(num1, num2)
     print(message)
 ```
+# Solution
+
+
+| Bank                                          |
+|-----------------------------------------------|
+| `balance: Float`                              |
+|                                               |
+| `deposit(date: Date, amount: Float): String`  |
+| `withdraw(date: Date, amount: Float): String` |
+| `generateStatementPDF(): Boolean`             |
+
+
+| Diary                      |
+|----------------------------|
+| `owner: String`            |
+|                            |
+| `lock(): Boolean`          |
+| `lock(): Boolean`          |
+| `addEntry(String): String` |
+| `getEntries(): String`     |
+
+
+| Calculator                      |
+|---------------------------------|
+| `add(Float, Float): Float`      |
+| `subtract(Float, Float): Float` |
+| `print(String): String`         |
+
 
 ## Exercise 2
 
@@ -111,6 +139,36 @@ I want to be able to turn the car left and right.
 
 I want to be able to replace the battery with either kind as needed.
 ```
+
+## Solution
+
+| Car                                               |
+|---------------------------------------------------|
+| `colour: String`                                  |
+|                                                   |
+| `changeColour(newColour: String): String`         |
+| `moveForward(distance: int): String`              |
+| `moveBackward(distance: int): String`             |
+| `stopMoving(): Boolean`                           |
+| `turnLeft(): Boolean`                             |
+| `turnRight(): Boolean`                            |
+
+| Battery                                             |
+|-----------------------------------------------------|
+| `rechargeableBattery: Boolean`                      |
+| `batteryPercentage: Integer`                        |
+|                                                     |
+| `getBatteryPercentage(): int`                       |
+| `replaceBattery(batteryType: String, type): String` |
+| `chargeBattery(): String`                           |
+
+
+| RemoteControl                                |
+|----------------------------------------------|
+| `isAdvanced: Boolean`                        |
+|                                              |
+| `changeType(isNewAdvanced: Boolean): String` |
+
 
 ## Next steps
 
