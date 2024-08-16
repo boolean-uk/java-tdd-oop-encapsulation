@@ -6,4 +6,8 @@ public class RemoteControl {
     public RemoteControl(String type){
         this.type = type;
     }
+
+    public String getRCType(){
+        return this.type;
+    }
 }

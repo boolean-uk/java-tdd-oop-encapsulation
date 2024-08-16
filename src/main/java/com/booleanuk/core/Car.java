@@ -25,4 +25,8 @@ public class Car {
     public Battery getBattery(){
         return this.battery;
     }
+
+    public RemoteControl getRemoteControl(){
+        return this.remoteControl;
+    }
 }
