@@ -49,4 +49,12 @@ public class CarTest {
         Assertions.assertFalse(car2.moveCarBackwards(0));
     }
 
+
+    @Test
+    public void testStopCar() {
+        Car car = new Car("Green", "rechargeable");
+        Assertions.assertTrue(car.moveCarForward(10));
+        Assertions.assertTrue(car.stopCar());
+    }
+
 }
