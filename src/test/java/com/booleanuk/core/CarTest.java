@@ -27,4 +27,14 @@ public class CarTest {
         Assertions.assertEquals("The battery is not rechargable",car.seeBattery());
 
     }
+
+    @Test
+    public void testSeeBatteryStatus() {
+        Car car = new Car("Blue","Disposal","advanced");
+        int result = moveCarForwardOrBackward();
+        Assertions.assertTrue(result < initialBatteryLevel, "Battery level should be smaller after moving the car");
+
+    }
+
+
 }
