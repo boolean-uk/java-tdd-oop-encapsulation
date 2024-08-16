@@ -33,4 +33,10 @@ public class Car {
     public String moveForward(int metres){
         return "Car moved forward " + metres + " metres";
     }
+
+    public String moveBackward(int metres){
+        return "Car moved backward " + metres + " metres";
+    }
+
+
 }
