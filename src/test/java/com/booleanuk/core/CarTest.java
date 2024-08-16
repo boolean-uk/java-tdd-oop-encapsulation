@@ -72,7 +72,7 @@ public class CarTest {
     @Test
     public void setBatteryType() {
         Car car = new Car("Green", "rechargeable");
-        car.setBatteryType("disposable");
+        Assertions.assertTrue(car.setBatteryType("disposable"));
         Assertions.assertEquals("disposable", car.batteryType);
     }
 
