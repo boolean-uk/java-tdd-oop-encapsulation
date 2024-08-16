@@ -15,7 +15,7 @@ public class Car {
     }
 
     public boolean moveCarForward(int distance) {
-        batteryPercentage -= distance / 2;
+        batteryPercentage -= distance == 1 ? 1 : (distance / 2);
         return true;
     }
 
