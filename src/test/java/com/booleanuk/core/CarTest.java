@@ -35,6 +35,7 @@ public class CarTest {
         Car car2 = new Car("Red", "rechargeable");
         Assertions.assertTrue(car2.moveCarForward(1));
         Assertions.assertEquals(99, car2.batteryPercentage);
+        Assertions.assertFalse(car2.moveCarForward(0));
     }
 
 }
