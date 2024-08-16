@@ -63,6 +63,10 @@ public class CarTest {
         Car car = new Car("Green", "rechargeable");
         Assertions.assertTrue(car.turnCar("left"));
         Assertions.assertTrue(car.turnCar("right"));
+        Assertions.assertFalse(car.turnCar("up"));
+        Assertions.assertThrows(NullPointerException.class, () -> {
+            car.turnCar(null);
+        });
     }
 
 }
