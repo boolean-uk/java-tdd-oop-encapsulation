@@ -13,9 +13,9 @@ public class TestRemoteControlledCar {
     @Test
     public void testsetCarColor(){
         RemoteControlledCar rc = new RemoteControlledCar("Black");
-        Assertions.assertEquals(rs.getCarColor(), "Black");
+        Assertions.assertEquals(rc.getCarColor(), "Black");
         rc.setCarColor("Blue with white flames");
-        Assertions.assertEquals(rs.getCarColor(), "Blue with white flames");
+        Assertions.assertEquals(rc.getCarColor(), "Blue with white flames");
     }
 
 }
