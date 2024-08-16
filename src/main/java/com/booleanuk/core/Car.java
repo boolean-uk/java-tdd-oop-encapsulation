@@ -31,6 +31,7 @@ public class Car {
     }
 
     public boolean stop(){
+        this.moving = false;
         return this.moving;
     }
 
