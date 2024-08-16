@@ -77,7 +77,7 @@ public class CarTest {
         RemoteControl remoteControl = new RemoteControl("simple");
         Car car = new Car("red", battery, remoteControl);
 
-        String movement = car.moveForward(100);
+        String movement = car.moveForward(99);
 
         String expectedString = "Car moved forward 100 metres";
 
@@ -94,7 +94,7 @@ public class CarTest {
         RemoteControl remoteControl = new RemoteControl("simple");
         Car car = new Car("red", battery, remoteControl);
 
-        String movement = car.moveBackward(100);
+        String movement = car.moveBackward(99);
 
         String expectedString = "Car moved backward 100 metres";
 
