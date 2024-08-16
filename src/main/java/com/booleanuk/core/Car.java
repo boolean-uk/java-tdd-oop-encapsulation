@@ -29,4 +29,8 @@ public class Car {
     public RemoteControl getRemoteControl(){
         return this.remoteControl;
     }
+
+    public String moveForward(int metres){
+        return "Car moved forward " + metres + " metres";
+    }
 }
