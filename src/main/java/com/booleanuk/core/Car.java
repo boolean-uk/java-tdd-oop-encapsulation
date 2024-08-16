@@ -21,4 +21,8 @@ public class Car {
     public String getColor(){
         return this.color;
     }
+
+    public Battery getBattery(){
+        return this.battery;
+    }
 }

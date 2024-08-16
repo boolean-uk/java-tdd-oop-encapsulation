@@ -12,4 +12,8 @@ public class Battery {
         return this.remainingBatteryPercentage;
     }
 
+    public String getBatteryType(){
+        return this.type;
+    }
+
 }
