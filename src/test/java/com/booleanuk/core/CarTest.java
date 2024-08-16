@@ -116,7 +116,7 @@ public class CarTest {
     }
 
     @Test
-    public void turnLeft(){
+    public void turnLeftTest(){
         /*
         I want to be able to turn the car left.
         */
@@ -130,7 +130,7 @@ public class CarTest {
     }
 
     @Test
-    public void turnLeft(){
+    public void turnRighTest(){
         /*
         I want to be able to turn the car right.
         */
