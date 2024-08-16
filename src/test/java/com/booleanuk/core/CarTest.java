@@ -101,5 +101,19 @@ public class CarTest {
         Assertions.assertEquals(expectedString, movement);
     }
 
+    @Test
+    public void stopTest(){
+                /*
+        I want to be able to move the car backward a specific distance.
+        */
+
+        Battery battery = new Battery("disposable");
+        RemoteControl remoteControl = new RemoteControl("simple");
+        Car car = new Car("red", battery, remoteControl);
+
+        String stop = car.stop();
+        Assertions.assertEquals("Car has stopped.", stop);
+    }
+
 
 }
