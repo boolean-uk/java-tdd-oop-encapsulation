@@ -16,4 +16,10 @@ public class CarTest {
     public void testMoveNoParameter(){
         Assertions.assertTrue(car.move());
     }
+
+    @Test
+    public void testStop(){
+        Assertions.assertTrue(car.move());
+        Assertions.assertFalse(car.stop());
+    }
 }

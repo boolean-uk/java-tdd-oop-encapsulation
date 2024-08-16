@@ -30,4 +30,8 @@ public class Car {
         return this.positionY;
     }
 
+    public boolean stop(){
+        return this.moving;
+    }
+
 }
