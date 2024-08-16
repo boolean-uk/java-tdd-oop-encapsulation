@@ -6,6 +6,7 @@ public class Battery {
 
     public Battery(String type){
         this.type = type;
+        this.remainingBatteryPercentage = 100;
     }
 
     public Integer getRemainingBatteryPercentage(){
@@ -15,5 +16,4 @@ public class Battery {
     public String getBatteryType(){
         return this.type;
     }
-
 }
