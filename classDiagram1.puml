@@ -1,0 +1,11 @@
+@startuml
+Class Bank
+{
+- balance: Double
++ deposit(dateAndTime: DateTime, amount: Double): Boolean
++ withdraw(dateAndTime: DateTime, amount: Double): Boolean
++ generateStatementPDF(): PDF
+}
+
+
+@enduml
