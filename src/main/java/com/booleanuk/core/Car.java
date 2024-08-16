@@ -48,8 +48,14 @@ public class Car {
     }
 
     public boolean setBatteryType(String batteryType) {
-        this.batteryType = batteryType;
-        return true;
+        if (batteryType == null) {
+            throw new NullPointerException();
+        }
+        if (batteryType.equalsIgnoreCase("rechargeable") || batteryType.equalsIgnoreCase("non-rechargeable")) {
+            this.batteryType = batteryType;
+            return true;
+        }
+        return false;
     }
 
 }
