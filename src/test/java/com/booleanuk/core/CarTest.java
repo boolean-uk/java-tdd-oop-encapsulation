@@ -143,5 +143,20 @@ public class CarTest {
         Assertions.assertEquals("Turning right.", turnRight);
     }
 
+    @Test
+    public void ChangeBatteryType(){
+        // I want to be able to choose between rechargable and disposable batteries.
+        Battery battery = new Battery("disposable");
+        RemoteControl remoteControl = new RemoteControl("simple");
+        Car car = new Car("red", battery, remoteControl);
+
+        Assertions.assertEquals("disposable", car.getBattery().getBatteryType());
+
+        Battery newBattery = new Battery("rechargable");
+        car.changeBattery(newBattery);
+
+        Assertions.assertEquals("rechargable", car.getBattery().getBatteryType());
+    }
+
 
 }
