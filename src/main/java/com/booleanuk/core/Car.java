@@ -22,4 +22,12 @@ public class Car {
         return true;
     }
 
+    public boolean moveCarBackwards(int distance) {
+        if (distance < 1) {
+            return false;
+        }
+        batteryPercentage -= distance == 1 ? 1 : (distance / 2);
+        return true;
+    }
+
 }
