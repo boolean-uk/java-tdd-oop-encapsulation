@@ -54,6 +54,8 @@ class Battery{
     + getIsRechargable(): boolean
     + usePower(consumption: int): int
     + rechargeBattery(percentPower: int): int
+    + turnDirectionInDegrees(degree: double): double
+    + getDirectionInDegrees(): double
 
 
 ' for a more complete system then i would probably use
