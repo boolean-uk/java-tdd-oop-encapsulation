@@ -34,4 +34,8 @@ public class Car {
         return true;
     }
 
+    public boolean turnCar(String direction) {
+        return true;
+    }
+
 }
