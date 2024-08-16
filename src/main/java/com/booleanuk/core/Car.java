@@ -21,12 +21,13 @@ public class Car {
     }
 
     public boolean move(){
-        return moving;
+        this.moving = true;
+        return this.moving;
     }
 
     public int move(int i){
-        positionY += i;
-        return positionY;
+        this.positionY += i;
+        return this.positionY;
     }
 
 }
