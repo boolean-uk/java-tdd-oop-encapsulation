@@ -50,6 +50,6 @@ public class CarTest {
         RemoteControl remoteControl2 = new RemoteControl("advanced");
         Car car2 = new Car("red", battery2, remoteControl2);
 
-        Assertions.assertEquals("rechargable", car2.getRemoteControl().getRCType());
+        Assertions.assertEquals("advanced", car2.getRemoteControl().getRCType());
     }
 }
