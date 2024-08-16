@@ -42,5 +42,11 @@ public class Car {
         return "Car has stopped.";
     }
 
+    public String turnLeft(){
+        return "Turning left.";
+    }
 
+    public String turnRight(){
+        return "Turning right.";
+    }
 }
