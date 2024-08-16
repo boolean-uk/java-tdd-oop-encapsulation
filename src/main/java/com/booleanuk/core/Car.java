@@ -49,4 +49,8 @@ public class Car {
     public String turnRight(){
         return "Turning right.";
     }
+
+    public void changeBattery(Battery newBattery){
+        this.battery = newBattery;
+    }
 }
