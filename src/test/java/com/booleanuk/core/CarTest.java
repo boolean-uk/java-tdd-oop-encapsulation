@@ -12,7 +12,13 @@ public class CarTest {
         Assertions.assertNotNull(car);
         Assertions.assertEquals("Green", car.color);
         Assertions.assertEquals("rechargeable", car.battery);
-    }
+        Assertions.assertThrows(NullPointerException.class, () -> {
+            new Car(null, "rechargeable");
+        });
 
+        Assertions.assertThrows(NullPointerException.class, () -> {
+            new Car("Green", null);
+        });
+    }
 
 }
