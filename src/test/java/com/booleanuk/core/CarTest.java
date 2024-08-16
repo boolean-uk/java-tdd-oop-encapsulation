@@ -11,4 +11,9 @@ public class CarTest {
     public void testMove(){
         Assertions.assertEquals(5, car.move(5));
     }
+
+    @Test
+    public void testMoveNoParameter(){
+        Assertions.assertTrue(car.move());
+    }
 }

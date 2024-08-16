@@ -20,6 +20,10 @@ public class Car {
         this.direction = "vertical";
     }
 
+    public boolean move(){
+        return moving;
+    }
+
     public int move(int i){
         positionY += i;
         return positionY;
