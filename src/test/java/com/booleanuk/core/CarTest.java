@@ -13,11 +13,11 @@ public class CarTest {
         RemoteControl remoteControl = new RemoteControl("simple");
         Car car = new Car("red", battery, remoteControl);
 
-        Assertions.assertEquals("red", car.color);
+        Assertions.assertEquals("red", car.getColor());
 
         String newCarColor = "green";
         car.setColor(newCarColor);
-        Assertions.assertEquals(newCarColor, car.color);
+        Assertions.assertEquals(newCarColor, car.getColor());
     }
 
 
