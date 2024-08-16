@@ -1,0 +1,33 @@
+@startuml
+
+Class Car {
+    - color: String
+    - battery: Battery
+    - remoteControl: RemoteControl
+
+    + Car(color: String, battery Battery, remoteControl RemoteControl)
+
+    + replaceBattery(): Boolean
+    + setColor(newColor: String): Boolean
+    + moveForward(distance: Integer):
+    + moveBackward(distance: Integer):
+    + stop():
+    + turnLeft():
+    + turnRight():
+}
+
+Class Battery {
+    - type: String
+    - remainingBatteryPercentage: Integer
+    + getRemainingBatteryPercentage(): Integer
+}
+
+Class RemoteControl {
+    - type: String
+    + RemoteControl(simpleOrAdvanced:String)
+
+}
+
+@enduml
+I want to be able to replace the battery with either kind as needed.
+
