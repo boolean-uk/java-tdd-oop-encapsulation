@@ -22,6 +22,7 @@ public class CarTest {
 
     @Test
     public void ChooseBetweenBatteryTypesTest(){
+        // I want to be able to choose between rechargable and disposable batteries.
         Battery battery = new Battery("disposable");
         RemoteControl remoteControl = new RemoteControl("simple");
         Car car = new Car("red", battery, remoteControl);
@@ -34,5 +35,21 @@ public class CarTest {
         Car car2 = new Car("red", battery2, remoteControl2);
 
         Assertions.assertEquals("rechargable", car2.getBattery().getBatteryType());
+    }
+
+    @Test
+    public void ChooseBetweenSimpleAndAdvancedRC(){
+        // I want to choose between a simple and an advanced remote control.
+        Battery battery = new Battery("disposable");
+        RemoteControl remoteControl = new RemoteControl("simple");
+        Car car = new Car("red", battery, remoteControl);
+
+        Assertions.assertEquals("simple", car.getRemoteControl().getRCType());
+
+        Battery battery2 = new Battery("rechargable");
+        RemoteControl remoteControl2 = new RemoteControl("advanced");
+        Car car2 = new Car("red", battery2, remoteControl2);
+
+        Assertions.assertEquals("rechargable", car2.getRemoteControl().getRCType());
     }
 }
