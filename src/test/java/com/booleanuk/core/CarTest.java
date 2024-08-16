@@ -20,6 +20,19 @@ public class CarTest {
         Assertions.assertEquals(newCarColor, car.getColor());
     }
 
+    @Test
+    public void ChooseBetweenBatteryTypesTest(){
+        Battery battery = new Battery("disposable");
+        RemoteControl remoteControl = new RemoteControl("simple");
+        Car car = new Car("red", battery, remoteControl);
+
+        Assertions.assertEquals("disposable", car.getBattery().getBatteryType());
 
 
+        Battery battery2 = new Battery("rechargable");
+        RemoteControl remoteControl2 = new RemoteControl("simple");
+        Car car2 = new Car("red", battery2, remoteControl2);
+
+        Assertions.assertEquals("rechargable", car2.getBattery().getBatteryType());
+    }
 }
