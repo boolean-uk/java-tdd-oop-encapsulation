@@ -74,6 +74,12 @@ public class CarTest {
         Car car = new Car("Green", "rechargeable");
         Assertions.assertTrue(car.setBatteryType("disposable"));
         Assertions.assertEquals("disposable", car.batteryType);
+
+        Assertions.assertThrows(NullPointerException.class, () -> {
+            car.setBatteryType(null);
+        });
+
+        Assertions.assertFalse(car.setBatteryType("invalid"));
     }
 
 }

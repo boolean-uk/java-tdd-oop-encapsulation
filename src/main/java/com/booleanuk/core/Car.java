@@ -51,7 +51,7 @@ public class Car {
         if (batteryType == null) {
             throw new NullPointerException();
         }
-        if (batteryType.equalsIgnoreCase("rechargeable") || batteryType.equalsIgnoreCase("non-rechargeable")) {
+        if (batteryType.equalsIgnoreCase("rechargeable") || batteryType.equalsIgnoreCase("disposable")) {
             this.batteryType = batteryType;
             return true;
         }
