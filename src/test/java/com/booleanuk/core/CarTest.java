@@ -67,6 +67,22 @@ public class CarTest {
         Assertions.assertEquals(100, car.getBattery().getRemainingBatteryPercentage());
     }
 
+    @Test
+    public void testMoveForward(){
+        /*
+        I want to be able to move the car forward a specific distance.
+        */
+
+        Battery battery = new Battery("disposable");
+        RemoteControl remoteControl = new RemoteControl("simple");
+        Car car = new Car("red", battery, remoteControl);
+
+        String movement = car.moveForward(100);
+
+        String expectedString = "Car moved forward 100 metres";
+
+        Assertions.assertEquals(expectedString, movement);
+    }
 
 
 }
