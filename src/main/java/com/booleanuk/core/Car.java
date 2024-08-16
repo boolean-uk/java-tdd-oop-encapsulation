@@ -21,7 +21,8 @@ public class Car {
     }
 
     public int move(int i){
-        return 0;
+        positionY += i;
+        return positionY;
     }
 
 }
