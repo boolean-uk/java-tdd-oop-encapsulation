@@ -65,6 +65,7 @@ public class Car {
                 '}';
     }
 
+    //sanity check
     public static void main(String[] args) {
         Car car = new Car("Blue", new Battery("Disposable"), new Controller("Advanced"));
 
