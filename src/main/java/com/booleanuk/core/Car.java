@@ -38,5 +38,9 @@ public class Car {
         return "Car moved backward " + metres + " metres";
     }
 
+    public String stop(){
+        return "Car has stopped.";
+    }
+
 
 }
