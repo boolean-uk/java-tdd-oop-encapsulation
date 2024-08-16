@@ -1,0 +1,61 @@
+@startuml
+class Driver{
+    + controller: RemoteController
+    + remoteControlledCar: RemoteControlledCar
+    + turnLeft(): double
+}
+
+class RemoteController{
+    + isTurnedOn: boolean
+    + battery: Battery
+    + car: remoteControlledCar
+    + turnLeft(): void
+    + turnRight(): void
+    + driveForward(): void
+    + driveBackward(): void
+    + stop(): void
+    + replaceBattery(): void
+}
+
+class AdvancedRemoteController extends RemoteController{
+    + turnLeft(amount: double): void
+    + turnRight(amount: double): void
+    + driveForward(amount: double): void
+    + driveBackward(amount: double): void
+
+}
+
+Driver "1" -- "1" RemoteController
+Driver "1" -- "1" RemoteControlledCar
+RemoteController "1" -- "1" RemoteControlledCar
+
+
+class RemoteControlledCar{
+    + isTurnedOn: boolean
+    + facingDirection: double
+    + speed: double
+    - battery: Battery
+    + color: String
+    + setCarColor(color String): void
+    + setBattery(battery: Battery)
+    + getBattery(): Battery
+    + replaceBattery(battery: Battery): void
+
+}
+
+RemoteControlledCar "1" -- "1" Battery
+RemoteController "1" -- "1" Battery
+
+
+class Battery{
+    - type: String
+    - rechargable: boolean
+    - outputVolt: double
+    - outputMilliAmps: double
+
+    + getType(): String
+    + getPowerLeftInPercent(): Double
+    + getPower(): Double
+}
+
+@enduml
