@@ -52,4 +52,21 @@ public class CarTest {
 
         Assertions.assertEquals("advanced", car2.getRemoteControl().getRCType());
     }
+
+    @Test
+    public void SeeBatteryPercentageRemaining(){
+        /*
+        I want to be able to see the battery percentage remaining.
+        Test demonstrates that a new battery has 100% battery, and that the percentage can be fetched.
+         */
+
+        Battery battery = new Battery("disposable");
+        RemoteControl remoteControl = new RemoteControl("simple");
+        Car car = new Car("red", battery, remoteControl);
+
+        Assertions.assertEquals(100, car.getBattery().getRemainingBatteryPercentage());
+    }
+
+
+
 }
