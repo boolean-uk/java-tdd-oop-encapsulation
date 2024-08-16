@@ -49,14 +49,11 @@ RemoteController "1" -- "1" Battery
 
 class Battery{
     - isRechargable: boolean
-    - outputVolt: double
-    - outputMilliAmps: double
-    - percentLeft: int
+    - percentPowerLeft: int
 
     + getIsRechargable(): boolean
-    + getPowerLeftInPercent(): Double
-    + getPower(): Double
     + usePower(consumption: int): int
+    + rechargeBattery(percentPower: int): int
 
 
 ' for a more complete system then i would probably use
