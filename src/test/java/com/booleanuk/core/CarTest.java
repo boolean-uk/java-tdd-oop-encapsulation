@@ -11,7 +11,7 @@ public class CarTest {
         Car car = new Car("Green", "rechargeable");
         Assertions.assertNotNull(car);
         Assertions.assertEquals("Green", car.color);
-        Assertions.assertEquals("rechargeable", car.battery);
+        Assertions.assertEquals("rechargeable", car.batteryType);
         Assertions.assertThrows(NullPointerException.class, () -> {
             new Car(null, "rechargeable");
         });
@@ -19,6 +19,12 @@ public class CarTest {
         Assertions.assertThrows(NullPointerException.class, () -> {
             new Car("Green", null);
         });
+    }
+
+    @Test
+    public void testGetBatteryPercentage() {
+        Car car = new Car("Green", "rechargeable");
+        Assertions.assertEquals(100, car.batteryPercentage());
     }
 
 }
