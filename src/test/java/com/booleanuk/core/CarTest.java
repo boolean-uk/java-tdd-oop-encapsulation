@@ -24,7 +24,7 @@ public class CarTest {
     @Test
     public void testGetBatteryPercentage() {
         Car car = new Car("Green", "rechargeable");
-        Assertions.assertEquals(100, car.batteryPercentage());
+        Assertions.assertEquals(100, car.batteryPercentage);
     }
 
 }
