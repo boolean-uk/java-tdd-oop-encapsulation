@@ -17,6 +17,9 @@ public class TestBattery {
         Battery testbat = new Battery(true);
         testbat.usePower(5);
         Assertions.assertEquals(testbat.getPower(), 95);
+
+        testbat.usePower(5000);
+        Assertions.assertEquals(testbat.getPower(), 0);
     }
 
     @Test
@@ -26,6 +29,10 @@ public class TestBattery {
         Assertions.assertEquals(testbat.getPower(), 85);
         testbat.rechargeBattery(5);
         Assertions.assertEquals(testbat.getPower(), 90);
+        testbat.rechargeBattery(1000);
+        Assertions.assertEquals(testbat.getPower(), 100);
+
+
 
 
         testbat = new Battery(false);

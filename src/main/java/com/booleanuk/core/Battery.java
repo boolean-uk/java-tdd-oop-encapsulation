@@ -21,5 +21,18 @@ public class Battery {
         return percentPowerLeft;
     }
 
+    public int rechargeBattery(int power){
+        if(!isRechargable) {
+            return percentPowerLeft;
+        }
+
+        percentPowerLeft += power;
+        if (percentPowerLeft > 100){
+            percentPowerLeft = 100;
+        }
+
+        return percentPowerLeft;
+    }
+
 
 }
