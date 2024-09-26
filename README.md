@@ -12,9 +12,12 @@
 
 ## Introduction
 
-In object-oriented programming (OOP), we organise our code into multiple different objects in an effort to control the complexity of our project. Each of these objects are responsible for a single set of related behaviour and state, which we define in Java classes as methods and members.
+In object-oriented programming (OOP), we organise our code into multiple different objects in an effort to control the 
+complexity of our project. Each of these objects are responsible for a single set of related behaviour and state, 
+which we define in Java classes as methods and members.
 
-Methods are actions that an object performs, members contain the data that the class knows. You can think of a class quite literally as any real world thing:
+Methods are actions that an object performs, members contain the data that the class knows. 
+You can think of a class quite literally as any real world thing:
 
 ```
 Human {
@@ -48,7 +51,10 @@ Human {
 }
 ```
 
-Does that class make sense? Maybe in a cyberpunk themed future, but not today! We call a class with unrelated behaviour / state a class with *low cohesion*. It doesn't make sense. When we're encapsulating program behaviour and state, we should always strive for *high cohesion* - everything in the class should relate to a single purpose.
+Does that class make sense? Maybe in a cyberpunk themed future, but not today! 
+We call a class with unrelated behaviour / state a class with *low cohesion*. 
+It doesn't make sense. When we're encapsulating program behaviour and state, 
+we should always strive for *high cohesion* - everything in the class should relate to a single purpose.
 
 In order to design a cohesive system, one useful technique is to start with a [class diagram](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-class-diagram/).
 
@@ -62,7 +68,8 @@ I used [gleek.io](https://www.gleek.io/) to create the diagram above. You can us
 
 ## Exercise 1
 
-Design a class diagram to re-organise the below classes into a more cohesive system. Add your diagram to the repo and share your work in your cohort's classroom channel on Discord.
+Design a class diagram to re-organise the below classes into a more cohesive system. 
+Add your diagram to the repo and share your work in your cohort's classroom channel on Discord.
 
 ```
 Bank
